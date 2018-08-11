@@ -31,5 +31,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:hbtoons_development</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="jdbc:postgresql://ec2-54-217-250-0.eu-west-1.compute.amazonaws.com :5432/d57ijsln4cdj4k" uuid="58c99ff4-a295-48d2-b0fd-467f9edc54d7">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-54-217-250-0.eu-west-1.compute.amazonaws.com :5432/d57ijsln4cdj4k</jdbc-url>
+    </data-source>
   </component>
 </project>
