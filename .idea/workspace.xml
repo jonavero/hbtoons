@@ -116,8 +116,8 @@
       <file leaf-file-name="estilos.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/estilos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="243" lean-forward="true" selection-start-line="243" selection-end-line="243" />
+            <state relative-caret-position="513">
+              <caret line="248" column="22" selection-start-line="248" selection-start-column="22" selection-end-line="248" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -432,12 +432,12 @@
       <workItem from="1533835839231" duration="3521000" />
       <workItem from="1533853735696" duration="8661000" />
       <workItem from="1533941133157" duration="3397000" />
-      <workItem from="1533947478870" duration="10638000" />
+      <workItem from="1533947478870" duration="11053000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201496000" />
+    <option name="totallyTimeSpent" value="201911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="-4" width="2499" height="1604" extended-state="6" />
@@ -804,8 +804,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/estilos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="243" lean-forward="true" selection-start-line="243" selection-end-line="243" />
+        <state relative-caret-position="513">
+          <caret line="248" column="22" selection-start-line="248" selection-start-column="22" selection-end-line="248" selection-end-column="22" />
         </state>
       </provider>
     </entry>

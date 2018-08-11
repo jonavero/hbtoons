@@ -240,7 +240,6 @@ h2.tituloSeccion1::after{
   header.headerTitulo{
     position:relative;
     height: 200px;
-      background-image: url('parallax.jpg') ;
 
 
 
@@ -842,7 +841,7 @@ ul.listas-de-episodion li a{
   transition: all 0.3s ease;
 }
 ul.listas-de-episodion li a:hover{
-  box-shadow: 0 10px 5px rgb(0,0,0,0.3);
+  box-shadow: 0 10px 5px rgba(0,0,0,0.3);
   border-bottom: 3px solid #6D6868;
   border-bottom-color: #C62828;
   color: #C62828;
