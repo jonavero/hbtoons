@@ -239,11 +239,20 @@ h2.tituloSeccion1::after{
 
   header.headerTitulo{
     position:relative;
-    height: 150px;
+    height: 200px;
+
+      background-image: url('parallax.jpg') ;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+
+
+
   }
 
   header.headerTitulo::before{
-    background-image: url('parallax.jpg');
+    background-image: url('parallax.jpg') ;
     content: ' ';
   }
   header.headerTitulo h1{
@@ -264,7 +273,7 @@ h2.tituloSeccion1::after{
     font-size: 3rem;
     cursor: pointer;
     display: none;
-    transition: all 0.3 easy;
+    transition: all 0.3s ease;
   }
 
   span.icono-menu:hover{
@@ -1068,8 +1077,14 @@ label{
 
 
 
+.contacto1{
+    color:#ffffff;
+    text-align: center;
+}
 
-
+.contactoC{
+    margin-top: 35px;
+}
 
 
 
