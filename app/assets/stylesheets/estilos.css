@@ -241,12 +241,6 @@ h2.tituloSeccion1::after{
     position:relative;
     height: 200px;
 
-      background-image: url('parallax.jpg') ;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-
-
 
 
   }
