@@ -1,0 +1,93 @@
+<style>
+  .header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 850px;
+  }
+  span{
+    font-weight: bold;
+    color: #d9edf7;
+  }
+
+</style>
+
+<div class="header">
+  <span><span><strong> Admin:</strong></span> <%= current_user.NombreCompleto %>.</span>
+  <%= link_to "Cerrar session", logout_path, method: :delete, class: 'btn btn-info' %>
+</div>
+<hr>
+
+<div class="container">
+  <div class="login">
+
+    <h2 style="color: #1E88E5;font-weight: bold;">Formulario para agregar serie</h2>
+
+    <%= form_for @Serie, url: editSerie_path(@Serie) do |f| %>
+
+      <% if @Serie.errors.any?%>
+        <ul>
+          <% @Serie.errors.full_messages.each do|msg| %>
+            <li><%= msg %></li>
+          <%end%>
+        </ul>
+      <%end%>
+
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Titulo</label>
+        <%=f.text_field :Titulo,:placeholder=>'Titulo', :class => 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Descripcion</label>
+        <%= f.text_field :descripcion, :placeholder => 'Descripcion', :class => 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Idioma</label>
+        <%= f.text_field :Idioma, :placeholder => 'Idioma', :class => 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Ano</label>
+        <%= f.number_field :Ano, :placeholder => 'Ano' , :class => 'form-control'%>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Episodios</label>
+        <%= f.number_field :Episodios %>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Estatus</label>
+        <%= f.select :Estatus, ['Activa','Proximamente'], :class => 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Valoracion</label>
+        <%= f.number_field :Valoracion, :placeholder => 'Valoracion', :class => 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Categoria</label>
+        <%= f.collection_select :Categoria_id, Categorium.all,:id,:Descripcion, :class => 'form-control'%>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Portada</label>
+        <%= f.file_field :Portada , :class => 'form-control'%>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Fondo</label>
+        <%= f.file_field :Fondo, :class => 'form-control' %>
+      </div>
+
+      <%= f.submit 'Enviar',:class=>'btn btn-primary' %>
+    <% end %>
+
+
+
+
+
+  </div>
+</div>

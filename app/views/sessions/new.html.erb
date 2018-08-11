@@ -1,0 +1,33 @@
+<div class="container">
+<div class="login">
+<div class='alerta alertTamano '>
+  <% if flash[:alert] %>
+    <div class="alerta2 alert alert-danger" style="margin-left: 10px;margin-right: 10px;font-weight: bold; text-align: center">
+
+      <p class="alertaL"><%= flash[:alert] %></p>
+    </div>
+  <% end %>
+</div>
+
+
+
+<%= form_tag '/login', class: 'form' do %>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <%= text_field_tag :Correo, nil, placeholder: 'Usuario', :class => 'form-control' %>
+    <small id="emailHelp" class="form-text text-muted">No compartir su clave de acceso.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <%= password_field_tag :password, nil, :placeholder => 'Password', :class => 'form-control' %>
+  </div>
+
+  <%= submit_tag 'Entrar', class: 'btn btn-primary' %>
+<% end %>
+
+</div>
+</div>
+
+
+
+

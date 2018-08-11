@@ -1,0 +1,158 @@
+
+
+<section class="serie-seccion">
+  <div class="container">
+    <div class="row">
+      <div class="all-serie">
+        <%= image_tag @Serie.Fondo.url, class: 'fondo-serie-seccion' %>
+        <div class="">
+          <h2 class="text-center subtitulo-serie-seccion "><%= @Serie.Titulo %>
+            <% case @Serie.Categoria_id %>
+            <% when 1 %>
+                              <span class="marcador marcador-nickelodeon">
+                               Nickelodeon
+                              </span>
+            <% when 2 %>
+                              <span class="marcador marcador-cartoon">
+                                  Cartoon Network
+                              </span>
+            <% when 5 %>
+                              <span class="marcador marcador-disney">
+                                  Disney
+                              </span>
+            <% when 4 %>
+                              <span class="marcador marcador-hanna">
+                                Hanna Barbera
+                              </span>
+            <% when 3 %>
+                              <span class="marcador marcador-foxKids">
+                                Fox Kids
+                              </span>
+            <% when 6 %>
+                             <span class="marcador marcador-warner">
+                               Warner Channel
+                             </span>
+            <% when 7 %>
+                            <span class="marcador marcador-marvel">
+                              Marvel
+                            </span>
+
+            <% end %></h2>
+
+          <div class="contenedor-informacion-serie">
+            <div class="imagen-serie">
+              <div class="">
+                <%=image_tag @Serie.Portada.url %>
+              </div>
+            </div>
+            <div class="informacion-serie-seccion">
+              <p>Episodios:<span><%= @Serie.Episodios %></span></p>
+              <p>Idioma:<span><%= @Serie.Idioma %></span></p>
+              <p>Año:<span class="marcador marcador-año"><%= @Serie.Ano %></span></p>
+              <p>Valoracion:<span class="valoracion1"><%= @Serie.Valoracion %><span class="fa fa-star"></span></span></p>
+              <p>Reseña:<br><span><%= @Serie.descripcion %></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contenedor-episodio-temporada">
+  <div class="container">
+    <div class="row">
+      <div class="contenedor-episondios">
+        <div class="">
+          <h3 class="subtitulo-linea">Episodios</h3>
+          <h4 class="estilo-temporada-activo estilo-temporada"><span class="fa fa-play"></span>Temporada</h4>
+          <% @Episodios.each do|e| %>
+          <ul class="listas-de-episodion">
+            <li><%= link_to capitulo_path(e) do %><span>Capitulo <%=e.Episodio %>-</span> <%= e.Titulo %><% end %></li>
+
+          </ul>
+        <% end %>
+          <div class="paginacion">
+            <ul class=" pagination">
+              <li>      <%= will_paginate @Episodios, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <aside class="temporada-recomendaciones">
+
+     <!--   <div class="tempora">
+          <h3 class="subtitulo-linea"></span>Temporadas</h3>
+          <%@Temporada.each do |t| %>
+          <ul>
+            <li class="estilo-temporada"><a href="#"><span class="fa fa-play"></span><%=t %></a></li>
+          </ul>
+            <% end %>
+        </div> -->
+        <h3 class="subtitulo-linea">Series recomentadas</h3>
+
+        <% @Recomendadas.each do |r| %>
+        <div class="series-recomendadas">
+
+
+              <%= link_to serie_path(r) do %>
+              <div class="serie informcion-serie-recomendada">
+                <%= image_tag r.Portada.url %>
+                <div class="informacion-serie">
+                  <div class="">
+                    <p class="nombre-serie"><%=r.Titulo %></p>
+
+
+                       <% case r.Categoria_id %>
+                                                        <% when 1 %>
+                                                        <span class="marcador marcador-nickelodeon">
+                                                         Nickelodeon
+                                                        </span>
+                                                        <% when 2 %>
+                                                        <span class="marcador marcador-cartoon">
+                                                            Cartoon Network
+                                                        </span>
+                                                        <% when 5 %>
+                                                        <span class="marcador marcador-disney">
+                                                            Disney
+                                                        </span>
+                                                        <% when 4 %>
+                                                        <span class="marcador marcador-hanna">
+                                                          Hanna Barbera
+                                                        </span>
+                                                        <% when 3 %>
+                                                        <span class="marcador marcador-foxKids">
+                                                          Fox Kids
+                                                        </span>
+                                                           <% when 6 %>
+                                                         <span class="marcador marcador-warner">
+                                                           Warner Channel
+                                                         </span>
+                                                        <% when 7 %>
+                                                         <span class="marcador marcador-marvel">
+                                                           Marvel
+                                                         </span>
+                                                          <% end %>
+
+
+
+                    <span class="marcador marcador-ano"><%=r.Ano %></span>
+                    <span class="valoracion"><%=r.Valoracion %><span class="fa fa-star"></span></span>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+
+
+
+
+
+        </div>
+        <% end %>
+      </aside>
+
+    </div>
+  </div>
+</section>

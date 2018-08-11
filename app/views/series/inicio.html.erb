@@ -1,0 +1,74 @@
+<style>
+  .header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 850px;
+  }
+    span{
+      font-weight: bold;
+      color: #d9edf7;
+    }
+
+    .container{
+      background: #d9edf7;
+    }
+
+    .boton{
+      padding: 10px;
+      border-radius: 5px;
+
+    }
+    .mover{
+      float: left;
+      margin-left: 500px;
+    }
+
+</style>
+
+<div class="header">
+<span><span><strong> Admin:</strong></span> <%= current_user.NombreCompleto %>.</span>
+<%= link_to "Cerrar session", logout_path, method: :delete, class: 'btn btn-info' %>
+</div>
+<section class="seccion categorias">
+  <div class="container">
+    <div class="row">
+
+<ul class="botontes-categorias">
+  <li><%=link_to 'Lista de Series',inicio_admin_path, class:' boton btn-info' %></li>
+  <li><%= link_to 'Lista de Capitulos', inicio_path, class: ' boton btn-cartoon' %></li>
+  <li><a  class="boton btn-disney" href="#">Categorias</a></li>
+  <li><a  class="boton btn-hanna" href="#">Usuarios</a></li>
+
+  <li><%= link_to 'Crear Serie',new_serie_path, class:'boton btn-marvel mover' %></li>
+</ul>
+    </div>
+
+    <table class="table ">
+      <thead class="thead-dark">
+      <tr>
+        <th>ID</th>
+        <th>Titulo</th>
+        <th>Idioma</th>
+        <th>Categoria</th>
+        <th>Accion</th>
+      </tr>
+      </thead>
+      <%@Series.each do |s|%>
+      <tr>
+        <td><%=s.id %></td>
+        <td><%=s.Titulo %></td>
+        <td><%=s.Idioma %></td>
+        <td><%=s.Categoria_id %></td>
+        <td><%= link_to 'Editar',editSerie_path(s), class: 'btn btn-info' %></td>
+      </tr>
+      <%end  %>
+
+    </table>
+
+    <div class="paginacion paginacion-all-series">
+      <ul class=" pagination">
+        <%= will_paginate @Series, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+      </ul>
+    </div>
+  </div>
+</section>

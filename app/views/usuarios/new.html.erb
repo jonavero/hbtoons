@@ -1,0 +1,42 @@
+
+<%= form_for @Usuario, url: new_usuario_path(@Usuario)do |f| %>
+  <% if @Usuario.errors.any? %>
+    <div id="errorExplanation">
+      <ul>
+        <% @Usuario.errors.full_messages.each do |msg| %>
+          <li  class="alert alert-danger" role="alert" ><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class='container'>
+    <div class='row'>
+
+      <div class='col-md-6'>
+
+        <%= f.text_field :NombreCompleto, class: "form-registro", placeholder: "Nombre Completo" %>
+
+      </div>
+      <div class='col-md-6'>
+        <%= f.password_field :password, class: "form-registro", placeholder: "Contraseña" %>
+
+
+        <%= f.text_field :Correo, class: "form-registro", placeholder: "Correo" %>
+
+
+        <%= f.text_field :Tipo, class: "form-registro", placeholder: "Tipo" %>
+
+        <%= f.select :Estatus, ['Activo','Inactivo'],{ :prompt => "Seleccionar"}%>
+
+
+      </div>
+
+
+      <%= f.submit class: "btn " %>
+
+    </div>
+
+  </div>
+
+<% end %>
