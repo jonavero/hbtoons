@@ -246,7 +246,7 @@ h2.tituloSeccion1::after{
   }
 
   header.headerTitulo::before{
-    background: url('parallax.jpg') ;
+    background-image: url('parallax.jpg') ;
     content: ' ';
   }
   header.headerTitulo h1{
