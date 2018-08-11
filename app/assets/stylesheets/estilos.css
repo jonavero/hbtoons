@@ -240,6 +240,7 @@ h2.tituloSeccion1::after{
   header.headerTitulo{
     position:relative;
     height: 200px;
+      background-image: url('parallax.jpg') ;
 
 
 
