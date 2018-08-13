@@ -116,10 +116,21 @@ li{
 .btn-marvel{
     background: #B71C1C;
 }
+
+.btn-marvel:hover{
+    background: #cf2200;
+}
+
 .marcador-warner,
 .btn-warner{
     background: #1b6d85;
 }
+
+.btn-warner:hover{
+    background: #035b85;
+}
+
+
 .btn-disney:hover{
   background:#1665AC;
 }
