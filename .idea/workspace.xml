@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="977bcbbd-6d1c-4385-94ad-dd2295314a37" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/series/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/series/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/series/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/series/show.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -94,7 +92,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="series" pinned="false" current-in-tab="true">
+      <file leaf-file-name="series" pinned="false" current-in-tab="false">
         <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/series">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -103,11 +101,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hbtoons_development_public_series.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/18-8-2018 Inserts/hbtoons_development_public_series.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="172" column="1172" lean-forward="true" selection-start-line="170" selection-end-line="172" selection-end-column="1172" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inicio.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/series/inicio.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/series/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1433">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            <state relative-caret-position="307">
+              <caret line="68" column="779" selection-start-line="68" selection-start-column="779" selection-end-line="68" selection-end-column="779" />
             </state>
           </provider>
         </entry>
@@ -126,15 +142,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="25" selection-start-column="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacto.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/series/contacto.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="72" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -400,7 +407,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="XML&#10;Oracle&#10;TEXT&#10;PostgreSQL" />
     <property name="database.data.extractors.current.id" value="Tab-separated (TSV)_id" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/18-8-2018 Inserts" />
     <property name="settings.editor.selected.configurable" value="database.data.views" />
   </component>
   <component name="RunDashboard">
@@ -463,12 +470,12 @@
       <workItem from="1533941133157" duration="3397000" />
       <workItem from="1533947478870" duration="17047000" />
       <workItem from="1534331331092" duration="2097000" />
-      <workItem from="1534548253306" duration="7684000" />
+      <workItem from="1534548253306" duration="9058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217686000" />
+    <option name="totallyTimeSpent" value="219060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="-11" width="1381" height="912" extended-state="6" />
@@ -480,8 +487,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32954547" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.27570093" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="10" visible="true" weight="0.3241206" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12472806" />
+      <window_info anchor="bottom" id="Database Console" order="10" visible="true" weight="0.3241206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25453228" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" sideWeight="0.49703556" visible="true" weight="0.16388687" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -510,13 +517,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/estilos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1845">
-          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/capitulos/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -614,13 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/series/inicio.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -834,17 +827,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/series/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1433">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/series">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/18-8-2018 Inserts/hbtoons_development_public_series.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="172" column="1172" lean-forward="true" selection-start-line="170" selection-end-line="172" selection-end-column="1172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/series/inicio.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/series/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="68" column="779" selection-start-line="68" selection-start-column="779" selection-end-line="68" selection-end-column="779" />
         </state>
       </provider>
     </entry>
