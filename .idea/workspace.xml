@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="977bcbbd-6d1c-4385-94ad-dd2295314a37" name="Default" comment="" />
+    <list default="true" id="977bcbbd-6d1c-4385-94ad-dd2295314a37" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/90a8c93e-e80e-4ba5-aedb-6c5d14b610d1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/90a8c93e-e80e-4ba5-aedb-6c5d14b610d1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -79,22 +82,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="capitulos" pinned="false" current-in-tab="false">
+      <file leaf-file-name="capitulos" pinned="false" current-in-tab="true">
         <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/capitulos">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true">
                 <filter text="&quot;Serie_id&quot; ='148'" />
               </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="capitulos_123" pinned="false" current-in-tab="false">
-        <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/capitulos_123">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -108,11 +102,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select___from_series_order_by_id 10-09-2018.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="series" pinned="false" current-in-tab="false">
+        <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/series">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select___from_series_order_by_id 10-09-2018.sql" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/Proximamente/select___from_series_order_by_id 10-09-2018.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="184" column="1240" lean-forward="true" selection-start-line="182" selection-end-line="184" selection-end-column="1240" />
+            <state relative-caret-position="2760">
+              <caret line="184" column="1240" selection-start-line="182" selection-end-line="184" selection-end-column="1240" />
             </state>
           </provider>
         </entry>
@@ -120,7 +123,7 @@
       <file leaf-file-name="hbtoons_development_public_capitulos10-09-2018.sql" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/Proximamente/hbtoons_development_public_capitulos10-09-2018.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
+            <state relative-caret-position="172620">
               <caret line="11508" column="332" selection-start-line="11090" selection-end-line="11508" selection-end-column="332" />
             </state>
           </provider>
@@ -129,7 +132,7 @@
       <file leaf-file-name="select___from_capitulos_order_by_id.sql" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/Proximamente/select___from_capitulos_order_by_id.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
+            <state relative-caret-position="166335">
               <caret line="11089" column="347" selection-start-line="10842" selection-end-line="11089" selection-end-column="347" />
             </state>
           </provider>
@@ -138,7 +141,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/series/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2205">
+            <state relative-caret-position="45">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
@@ -283,6 +286,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -393,7 +397,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,8 +404,8 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="XML&#10;Oracle&#10;TEXT&#10;PostgreSQL" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Proximamente/select___from_series_order_by_id 10-09-2018.sql" />
-    <property name="settings.editor.selected.configurable" value="database.data.views" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Proximamente/Taz-Mania Xmen Anime Transformers Prime.csv" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -470,27 +473,28 @@
       <workItem from="1534808812986" duration="6543000" />
       <workItem from="1534900686144" duration="3074000" />
       <workItem from="1534986551248" duration="11833000" />
-      <workItem from="1535230508918" duration="19321000" />
+      <workItem from="1535230508918" duration="20263000" />
+      <workItem from="1537760965473" duration="1937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262064000" />
+    <option name="totallyTimeSpent" value="264943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="-11" width="1381" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.17331399" side_tool="true" visible="true" weight="0.33040202" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.18201596" side_tool="true" weight="0.21984924" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32954547" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.27570093" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="10" sideWeight="0.826686" visible="true" weight="0.33040202" />
+      <window_info anchor="bottom" id="Database Console" order="10" sideWeight="0.81798404" visible="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25453228" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" sideWeight="0.49703556" visible="true" weight="0.2284264" />
+      <window_info active="true" anchor="right" id="Database" order="3" sideWeight="0.49703556" visible="true" weight="0.2284264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -517,6 +521,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/capitulos_temp">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/usuarios_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -771,7 +782,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/series/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2205">
+        <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
@@ -783,20 +794,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/console_7.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Documents/Proximamente/select___from_capitulos_order_by_id.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
+        <state relative-caret-position="166335">
           <caret line="11089" column="347" selection-start-line="10842" selection-end-line="11089" selection-end-column="347" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/series">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -807,25 +808,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/capitulos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="&quot;Serie_id&quot; ='148'" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/capitulos_123">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/Proximamente/hbtoons_development_public_capitulos10-09-2018.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
+        <state relative-caret-position="172620">
           <caret line="11508" column="332" selection-start-line="11090" selection-end-line="11508" selection-end-column="332" />
         </state>
       </provider>
@@ -837,7 +822,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documents/Proximamente/select___from_series_order_by_id 10-09-2018.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="184" column="1240" selection-start-line="182" selection-end-line="184" selection-end-column="1240" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/capitulos_temp">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/capitulos_123">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -851,10 +850,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/Proximamente/select___from_series_order_by_id 10-09-2018.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="184" column="1240" lean-forward="true" selection-start-line="182" selection-end-line="184" selection-end-column="1240" />
+    <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/series">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/capitulos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="&quot;Serie_id&quot; ='148'" />
+          </filtering>
         </state>
       </provider>
     </entry>
