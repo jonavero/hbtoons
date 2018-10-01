@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="977bcbbd-6d1c-4385-94ad-dd2295314a37" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/90a8c93e-e80e-4ba5-aedb-6c5d14b610d1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/90a8c93e-e80e-4ba5-aedb-6c5d14b610d1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="977bcbbd-6d1c-4385-94ad-dd2295314a37" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -102,7 +99,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Inserts.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Inserts.sql" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/Proximamente/Inserts.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
@@ -138,11 +135,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Series.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Series.sql" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/Documents/Proximamente/Series.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="466">
-              <caret line="187" column="931" selection-start-line="185" selection-end-line="187" selection-end-column="931" />
+              <caret line="190" column="1309" lean-forward="true" selection-start-line="188" selection-end-line="190" selection-end-column="1309" />
             </state>
           </provider>
         </entry>
@@ -192,7 +189,7 @@
       <find>parallax</find>
       <find>header</find>
       <find>text-ce</find>
-      <find />
+      <find>headerTitulo h1</find>
       <find>input</find>
       <find>fecha-publicacion</find>
       <find>informcion-serie-recomendada</find>
@@ -485,12 +482,12 @@
       <workItem from="1534900686144" duration="3074000" />
       <workItem from="1534986551248" duration="11833000" />
       <workItem from="1535230508918" duration="20263000" />
-      <workItem from="1537760965473" duration="6328000" />
+      <workItem from="1537760965473" duration="6647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269334000" />
+    <option name="totallyTimeSpent" value="269653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="-11" width="1381" height="912" extended-state="6" />
@@ -839,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/Proximamente/Series.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="187" column="931" selection-start-line="185" selection-end-line="187" selection-end-column="931" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/serie.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -860,10 +850,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/series">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$USER_HOME$/Documents/Proximamente/Inserts.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="11857" column="354" lean-forward="true" selection-start-line="11651" selection-end-line="11857" selection-end-column="354" />
         </state>
       </provider>
     </entry>
@@ -876,10 +866,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/Proximamente/Inserts.sql">
+    <entry file="das://90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/database/hbtoons_development/schema/public/table/series">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Proximamente/Series.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="11857" column="354" lean-forward="true" selection-start-line="11651" selection-end-line="11857" selection-end-column="354" />
+        <state relative-caret-position="466">
+          <caret line="190" column="1309" lean-forward="true" selection-start-line="188" selection-end-line="190" selection-end-column="1309" />
         </state>
       </provider>
     </entry>
