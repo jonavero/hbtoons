@@ -11,30 +11,30 @@
 
 @font-face {
   font-family:'LuckiestGuy-Regular';
-  src: url('LuckiestGuy-Regular.woff2') format('woff2'),
-       url('LuckiestGuy-Regular.ttf') format('truetype'),
-       url('LuckiestGuy-Regular.woff') format('woff'),
-       url('LuckiestGuy-Regular.svg#LuckiestGuy-Regular') format('svg');
+  src: font_url('LuckiestGuy-Regular.woff2') format('woff2'),
+  font_url('LuckiestGuy-Regular.ttf') format('truetype'),
+  font_url('LuckiestGuy-Regular.woff') format('woff'),
+  font_url('LuckiestGuy-Regular.svg#LuckiestGuy-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family:'OpenSans-Regular';
-  src: url('OpenSans-Regular.woff2') format('woff2'),
-       url('OpenSans-Regular.ttf') format('truetype'),
-       url('OpenSans-Regular.woff') format('woff'),
-       url('OpenSans-Regular.svg#LuckiestGuy-Regular') format('svg');
+  src: font_url('OpenSans-Regular.woff2') format('woff2'),
+  font_url('OpenSans-Regular.ttf') format('truetype'),
+  font_url('OpenSans-Regular.woff') format('woff'),
+  font_url('OpenSans-Regular.svg#LuckiestGuy-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family:'OpenSans-SemiBold';
-  src: url('OpenSans-SemiBold.woff2') format('woff2'),
-       url('OpenSans-SemiBold.ttf') format('truetype'),
-       url('OpenSans-SemiBold.woff') format('woff'),
-       url('OpenSans-SemiBold.svg#LuckiestGuy-Regular') format('svg');
+  src: font_url('OpenSans-SemiBold.woff2') format('woff2'),
+  font_url('OpenSans-SemiBold.ttf') format('truetype'),
+  font_url('OpenSans-SemiBold.woff') format('woff'),
+  font_url('OpenSans-SemiBold.svg#LuckiestGuy-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -257,7 +257,7 @@ h2.tituloSeccion1::after{
   }
 
   header.headerTitulo::before{
-    background-image: url('parallax.jpg') ;
+    background-image: image_url('parallax.jpg');
     content: ' ';
   }
   header.headerTitulo h1{
@@ -406,7 +406,7 @@ h2.tituloSeccion1::after{
   h2.tituloSeccion::after{
     content:'';
     margin: 0 auto;
-    background-image:url('circulo.png');
+    background-image: image_url('circulo.png');
     background-repeat: no-repeat;
     height: 30px;
     width: 50px;
