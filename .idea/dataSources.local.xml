@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="postgres@localhost" uuid="90a8c93e-e80e-4ba5-aedb-6c5d14b610d1">
-      <database-info product="PostgreSQL" version="9.5.13" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+      <database-info product="PostgreSQL" version="9.5.16" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
@@ -31,6 +31,15 @@
       <secret-storage>master_key</secret-storage>
       <first-sync>true</first-sync>
       <user-name>waibjiromtoost</user-name>
+    </data-source>
+    <data-source name="hbtoons_prod@localhost" uuid="a53d1c7b-8fcd-45b8-9c44-c4680e760e1a">
+      <database-info product="PostgreSQL" version="9.5.16" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-schemas>hbtoons_prod:public</introspection-schemas>
     </data-source>
   </component>
 </project>

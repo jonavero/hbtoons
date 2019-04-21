@@ -1,0 +1,1102 @@
+
+/*Estilos generales*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+@font-face {
+  font-family:'LuckiestGuy-Regular';
+  src: font_url('LuckiestGuy-Regular.woff2') format('woff2'),
+  font_url('LuckiestGuy-Regular.ttf') format('truetype'),
+  font_url('LuckiestGuy-Regular.woff') format('woff'),
+  font_url('LuckiestGuy-Regular.svg#LuckiestGuy-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'OpenSans-Regular';
+  src: font_url('OpenSans-Regular.woff2') format('woff2'),
+  font_url('OpenSans-Regular.ttf') format('truetype'),
+  font_url('OpenSans-Regular.woff') format('woff'),
+  font_url('OpenSans-Regular.svg#LuckiestGuy-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'OpenSans-SemiBold';
+  src: font_url('OpenSans-SemiBold.woff2') format('woff2'),
+  font_url('OpenSans-SemiBold.ttf') format('truetype'),
+  font_url('OpenSans-SemiBold.woff') format('woff'),
+  font_url('OpenSans-SemiBold.svg#LuckiestGuy-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'OpenSans-Regular';
+}
+
+/*Estilos comunes*/
+.parallax::before{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background-size: cover;
+  background-position: center center;
+  filter:brightness(0.5);
+  z-index: -1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+a:hover{
+   text-decoration: none;
+   color: #fff;
+ }
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+body{
+  background: #212121;
+}
+p{
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+li{
+  list-style: none;
+}
+
+.marcador{
+  padding: 5px;
+  background: red;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-right: 7px;
+  color: #fff;
+}
+
+.btn{
+  transition: all 0.2s ease;
+}
+
+.marcador-nickelodeon,
+.btn-nickelodeon{
+  background: #FF6700;
+}
+
+.btn-nickelodeon:hover{
+  background: #D66111;
+}
+.marcador-disney,
+.btn-disney{
+  background:#1E88E5;
+}
+.marcador-marvel,
+.btn-marvel{
+    background: #B71C1C;
+}
+
+.btn-marvel:hover{
+    background: #cf2200;
+}
+
+.marcador-warner,
+.btn-warner{
+    background: #1b6d85;
+}
+
+.btn-warner:hover{
+    background: #035b85;
+}
+
+
+.btn-disney:hover{
+  background:#1665AC;
+}
+.marcador-hanna,
+.btn-hanna{
+  background:#795548;
+}
+.btn-hanna:hover{
+  background:#5D4037;
+}
+.marcador-cartoon,
+.btn-cartoon{
+  background: #6D6868;
+}
+.btn-cartoon:hover{
+  background:#535353;
+}
+.marcador-foxKids,
+.btn-foxKids{
+  background:#E53935;
+}
+.btn-foxKids:hover{
+  background:#B33633;
+}
+.marcador-ano{
+  background: #C62828;
+}
+.btn-todas-series{
+  background: #009688;
+}
+.btn-todas-series:hover{
+  background:#077E73;
+}
+
+.valoracion{
+ color: #fff;
+ position: absolute;
+ right: 15px;
+}
+
+.valoracion1 > span,
+.valoracion > span{
+  margin-left: 3px;
+  color: #FFEB3B;
+}
+
+@media only screen and (max-width:800px) {
+  .seccion{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+h2.tituloSeccion1{
+  font-size: 2.2rem;
+  color:#6D6868;
+}
+
+h2.tituloSeccion1::after{
+  content: " ";
+  margin: 0 auto;
+  background: #6D6868;
+  width: 100%;
+  height: 5px;
+  display: block;
+  margin-top: 10px
+}
+
+.btn-instagram{
+  background: #E4405F;
+  transition: all 0.3s ease;
+}
+.btn-instagram:hover{
+  background: #C5334F;
+}
+
+.btn-facebook{
+  background: #3B5999;
+  transition: all 0.3s ease;
+}
+
+.btn-facebook:hover{
+  background:#2E4576;
+}
+
+.btn-twitter{
+  background: #55ACEE;
+  transition: all 0.3s ease;
+}
+
+.btn-twitter:hover{
+  background:#4289BF;
+}
+
+.error{
+  color:#971010;
+  height: 10px;
+  margin: 5px;
+  display:block;
+  font-family: "OpenSans-SemiBold";
+}
+
+.btn-enviar{
+  background: #971010;
+  color: #fff;
+  transition: all 0.2s ease;
+  padding: 5px 30px;
+}
+.btn-enviar:hover{
+  background: #750F0F;
+  color: #fff;
+}
+/*Pagina principal*/
+  /*Header*/
+
+
+  header.headerTitulo{
+    position:relative;
+    height: 200px;
+
+
+
+  }
+
+  header.headerTitulo::before{
+    background-image: image_url('parallax.jpg');
+    content: ' ';
+  }
+  header.headerTitulo h1{
+    margin: 0;
+    padding: 10px 0px;
+    z-index: 1000;
+    color: #fff;
+    font-family: 'LuckiestGuy-Regular';
+    font-size: 3rem;
+    line-height:150px
+  }
+
+  span.icono-menu{
+    position: absolute;
+    right: 50px;
+    top:10px;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease;
+  }
+
+  span.icono-menu:hover{
+    color: #FF7E7E;
+  }
+
+  @media only screen and (max-width:480px){
+    span.icono-menu{
+      right: 10px;
+    }
+  }
+
+
+  /*menu*/
+
+  nav.menu{
+    background: #B71C1C;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5px 0;
+  }
+
+  nav.menu > div{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    margin-right: 70px;
+  }
+  ul.navegacion {
+    align-self: center;
+    margin: 0;
+    margin-right: 25px;
+  }
+
+  ul.navegacion > li a span{
+    margin-right: 5px;
+  }
+  ul.navegacion li{
+    list-style: none;
+    float:left;
+    padding: 5px 5px;
+  }
+
+  ul.navegacion li a{
+    font-family: "OpenSans-SemiBold";
+    text-align: center;
+    font-size: 1.45rem;
+    transition: all 0.2s;
+  }
+  ul.navegacion li a:hover{
+    color: #FF7E7E;
+  }
+
+  form.formulario-buscar .inputS{
+    background:none;
+    border: none;
+    outline: none;
+    color:#FF7E7E;
+    font-style: italic;
+    font-size: 1.4rem;
+    width: 120px;
+  }
+
+  .noBorden{
+      border: none;
+  }
+  form.formulario-buscar > .inputS::-webkit-input-placeholder{
+    font-style: italic;
+    color: #FF7E7E;
+  }
+
+  form.formulario-buscar button{
+    background: none;
+    border: none;
+    color: #FF7E7E;
+  }
+
+  @media only screen and (max-width:480px){
+    ul.navegacion{
+      margin: 0;
+      width: 100%;
+    }
+    ul.navegacion li{
+      float:none;
+      border-bottom: 1px solid #fff;
+    }
+    ul.navegacion li:last-child{
+      border: none
+    }
+
+    ul.navegacion li a{
+      display:block;
+      padding: 5px 0;
+      width: 100%;
+    }
+
+    nav.menu > div{
+      flex-direction: column-reverse;
+      margin-right: 0;
+      width: 100%;
+    }
+
+    nav.menu{
+      flex-direction: column;
+      align-items: center;
+      display: none;
+    }
+    form.formulario-buscar{
+      width: 90%;
+      padding: 10px 0;
+      background: #971010;
+      border-radius: 5px;
+    }
+    form.formulario-buscar input{
+      width: 90%;
+      padding-left: 15px;
+    }
+    span.icono-menu{
+      display: block;
+    }
+  }
+
+  /*seccion proximamente*/
+  h2.tituloSeccion::after{
+    content:'';
+    margin: 0 auto;
+    background-image: image_url('circulo.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 50px;
+    margin-top: 10px;
+    display: block;
+  }
+  h2.tituloSeccion{
+    font-size: 2.2rem;
+    text-align: center;
+    color:#6D6868;
+  }
+
+  div.serie img{
+    width: 100%;
+    height: 100%;
+    border-radius:20px;
+    object-fit: cover;
+    transition: all 0.5s ease ;
+  }
+
+  /* NOTE: pasar a la lista de estilos comunes  */
+
+  .serieProxima{
+    width: 350px;
+    height:200px;
+    margin: 15px 5px;
+  }
+  .informacion-serie{
+    position: absolute;
+    bottom:0;
+    left:0;
+    transition: all 0.5s ease ;
+    width: 100%;
+  }
+  .informacion-serie > div{
+    padding: 5px 15px 15px 15px;
+    background: rgba(0,0,0,0.6);
+  }
+  .nombre-serie{
+    font-family: 'OpenSans-SemiBold';
+    margin-bottom: 7px;
+    color: #fff;
+      font-size:1.5rem;
+      text-shadow: 2px 2px 5px #000000;
+  }
+  .serie{
+      position: relative;
+      overflow: hidden;
+      border-radius:20px;
+  }
+
+  .serie:hover img{
+    transform: scale(1.5);
+    filter: brightness(1);
+  }
+
+  .serie:hover .informacion-serie {
+    bottom: -100px;
+  }
+  .conjuntos-series{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width:380px){
+    .seccion{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  /*section serie clasicas*/
+
+  section.seriesClasicas  p{
+    padding: 5px 30px;
+  }
+
+  /*section categorias*/
+
+  .subtitulo {
+    font-size: 2rem;
+    color:#6D6868;
+  }
+
+  section.categorias ul.botontes-categorias{
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+    section.categorias  ul.botontes-categorias  li{
+      margin: 5px 7px;
+    }
+
+
+    section.categorias ul.botontes-categorias li a:hover{
+      color: #fff;
+    }
+
+    .serie-Activa{
+      width: 225px;
+      height: 320px;
+      margin: 15px 5px;
+    }
+
+    .conjuntos-series > a{
+      margin:10px;
+    }
+    .paginacion{
+      display: flex;
+      justify-content: center;
+    }
+
+    .paginacion ul li a{
+      background:#6D6868;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .paginacion ul li a:hover{
+      background: #464343;
+      color: #fff;
+    }
+
+    .paginacion ul li a{
+      margin:  5px;
+      color: #fff;
+    }
+
+    @media only screen and (max-width:400px){
+      .paginacion ul li a{
+        margin:  0px;
+      }
+    }
+
+    footer.footer-pagina{
+      background: #393636;
+      padding: 20px 5px;
+      /* position: absolute;
+      bottom: 0;
+      width: 100%; */
+
+    }
+    div.contenido-footer{
+      position: relative;
+    }
+    div.contenido-footer p{
+      margin: 0px;
+      color:#AFAEAE;
+    }
+    div.redes-sociales{
+      position: absolute;
+      right: 0px;
+      bottom: -10px;
+    }
+
+    div.redes-sociales ul li a{
+      padding: 100%;
+    }
+
+    div.redes-sociales ul li{
+        float: left;
+        margin: 5px;
+        background: red;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    @media only screen and (max-width:500px){
+      div.redes-sociales{
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+/*pagina contactos*/
+div.contenedor-formulario-contactos{
+  display:flex;
+  justify-content: center;
+  margin: 40px 0px 50px 0px;
+  width: 100%;
+}
+form.formulario-contacto{
+  width: 70%;
+}
+
+form.formulario-contacto > div:first-child{
+  display: flex;
+  width: 100%;
+
+}
+form.formulario-contacto > div:first-child > div:first-child{
+  margin-right: 25px;
+}
+form.formulario-contacto > div:first-child > div{
+  width: 50%;
+}
+
+form.formulario-contacto > div:nth-child(2){
+  margin-top: 5px;
+}
+
+.estilo-fomulario textarea,
+.estilo-fomulario input[type="text"]{
+  background: #313030;
+  border: none;
+  color: #706D6D;
+}
+
+.estilo-fomulario textarea::-webkit-input-placeholder,
+.estilo-fomulario input[type="text"]::-webkit-input-placeholder{
+  color: #706D6D;
+}
+
+.estilo-fomulario textarea{
+  resize: none;
+}
+
+form.formulario-contacto > div:last-child{
+  display: flex;
+  justify-content: center;
+
+}
+
+@media only screen and (max-width:500px){
+  form.formulario-contacto{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:360px){
+  form.formulario-contacto > div:first-child{
+    flex-wrap: wrap;
+  }
+
+  form.formulario-contacto > div:first-child > div{
+    width: 100%;
+  }
+
+  form.formulario-contacto > div:first-child > div:first-child{
+    margin-right: 0px;
+  }
+}
+
+
+/*Pagina series*/
+
+div.all-serie{
+  position: relative;
+  margin-top: 50px;
+}
+.subtitulo-serie-seccion > span{
+  margin-left: 10px;
+}
+
+div.all-serie > div{
+  padding:10px 0px 20px 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+
+}
+.subtitulo-serie-seccion:after{
+  content: " ";
+  margin: 0 auto;
+  background: #6D6868;
+  width: 65%;
+  height: 5px;
+  display: block;
+  margin-top: 10px
+}
+
+.subtitulo-serie-seccion{
+  font-family: "OpenSans-SemiBold";
+  color: #fff;
+  font-size: 2.2rem;
+  margin-top: 20px;
+}
+
+img.fondo-serie-seccion {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.3);
+  z-index: -1;
+}
+
+div.contenedor-informacion-serie{
+  display: flex;
+  justify-content: center;
+  margin-top:50px;
+  margin-bottom: 20px;
+}
+
+div.imagen-serie{
+  margin-right: 25px;
+}
+div.imagen-serie > div {
+  width: 170px;
+  margin: 0 auto;
+  margin-right: 0;
+}
+div.imagen-serie > div > img{
+  width:100%;
+  object-fit: cover;
+
+}
+
+div.informacion-serie-seccion{
+  width: 75%;
+}
+
+div.informacion-serie-seccion > p{
+  font-family:'OpenSans-SemiBold';
+}
+
+div.informacion-serie-seccion > p > span{
+  margin: 5px;
+  color: #BBBABA;
+}
+
+div.informacion-serie-seccion  .marcador-año{
+  color: #fff;
+}
+
+div.informacion-serie-seccion > p:last-child span{
+  margin-left: 0px;
+}
+
+@media only screen and (max-width:780px){
+  .serie-seccion{
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+}
+
+@media only screen and (max-width:600px){
+  div.contenedor-informacion-serie{
+    flex-wrap:wrap;
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+
+  div.imagen-serie{
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
+
+  .informacion-serie-seccion{
+    width: 100% !important;
+  }
+}
+
+/* seccion episodio*/
+
+
+.subtitulo-linea::after{
+  content: " ";
+  margin: 0 auto;
+  background: #6D6868;
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.subtitulo-linea{
+  font-family: "OpenSans-SemiBold";
+  color: #fff;
+  font-size: 2rem;
+}
+
+.contenedor-episodio-temporada{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.contenedor-episodio-temporada div.row{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.contenedor-episondios > div,
+.tempora,
+.series-recomendadas {
+  background: #302E2E;
+  padding: 5px 20px 20px 20px;
+
+}
+.temporada-recomendaciones{
+  width: 30%;
+
+}
+.contenedor-episondios{
+  width: 60%;
+  margin-right: 20px;
+}
+
+
+.tempora{
+  margin-bottom: 20px;
+}
+.estilo-temporada a,
+h4.estilo-temporada {
+  padding: 12px 15px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "OpenSans-Regular"
+}
+.estilo-temporada a{
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.estilo-temporada a:hover{
+  background: #C62828;
+}
+
+.estilo-temporada-activo{
+  background: #C62828;
+}
+
+section.contenedor-episodio-temporada .fa-play{
+  margin-right: 5px;
+}
+
+ul.listas-de-episodion li a{
+  display: block;
+  border-bottom: 3px solid #6D6868;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+ul.listas-de-episodion li a:hover{
+  box-shadow: 0 10px 5px rgba(0,0,0,0.3);
+  border-bottom: 3px solid #6D6868;
+  border-bottom-color: #C62828;
+  color: #C62828;
+}
+
+.informcion-serie-recomendada{
+  height: 200px;
+  width: 100%;
+  max-width: 400px;
+}
+div.series-recomendadas > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+div.series-recomendadas > div > a{
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width:615px){
+  .contenedor-episodio-temporada div.row{
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+
+  .temporada-recomendaciones{
+    width: 90%;
+  }
+
+  .contenedor-episondios{
+    width: 90%;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+}
+
+/*pagina serie-video*/
+
+div.serie-video-informacion h3{
+  font-size: 1.7rem;
+  color: #BBBABA;
+  margin-bottom: 20px;
+  margin-top: 5px;
+
+}
+
+div.serie-video-informacion h3 > span{
+  color:#fff;
+}
+div.serie-video-informacion {
+  width: 70%;
+  margin-right: 20px;
+}
+div.serie-video-informacion > iframe{
+  width: 100%;
+  height:450px;
+}
+section.contenedor-video-recomendaciones{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+aside.temporada-recomendaciones-series{
+  margin-top: 105px;
+  width: 30%;
+}
+section.contenedor-video-recomendaciones  .row{
+  display: flex;
+
+}
+
+div.resena-serie{
+  background: #313030;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+div.resena-serie h4{
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "OpenSans-SemiBold"
+}
+div.resena-serie p{
+  color:#BBBABA;
+}
+
+section.contenedor-video-recomendaciones .contenedor-episondios {
+  width: 100%;
+
+}
+
+section.contenedor-video-recomendaciones .contenedor-episondios > div{
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+}
+
+div.comentario-serie .formulario-contacto {
+  width: 100%;
+}
+
+div.comentario-serie form.formulario-contacto > div:last-child{
+  display: block;
+  padding-bottom: 15px;
+}
+
+div.contenedor-comentarios > div:first-child > p{
+  color:#6D6868;
+  font-family: "OpenSans-SemiBold";
+  font-size:1.5rem;
+}
+
+div.contenedor-comentarios > div:first-child{
+  border-bottom: 2px solid #6D6868;
+}
+
+div.imagen-persona img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+div.comentario-por-persona{
+  padding: 10px;
+  margin-left: 20px;
+}
+
+div.imagen-persona{
+  display: flex;
+  align-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+div.imagen-persona > p {
+  margin-left: 15px;
+  font-size: 1.2rem;
+}
+
+span.fecha-publicacion{
+  color: #7A7474;
+  font-size: 1.1rem;
+   margin-left:600px ;
+}
+
+.comentario-persona{
+  margin-bottom: 20px;
+}
+.comentario-persona p {
+  color: #BBBABA;
+  font-size: 1.2rem;
+  margin-left:55px;
+}
+
+ .btn-responder-comentario{
+  font-size: 1.2rem;
+  background:#707070;
+  float: right;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+ }
+.btn-responder-comentario:hover{
+  background: #585454;
+  color: #fff;
+}
+
+@media only screen and (max-width:800px){
+  div.serie-video-informacion > iframe{
+    height:250px;
+  }
+
+  section.contenedor-video-recomendaciones{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width:600px){
+  div.serie-video-informacion{
+    width: 100%;
+  }
+  .contenedor-video-recomendaciones aside.temporada-recomendaciones-series{
+    display: none;
+  }
+
+  div.serie-video-informacion > iframe{
+    height:350px;
+  }
+}
+
+
+
+
+/*nuevo style*/
+
+.login{
+    width: 50%;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+label{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.alertaL{
+    color: red;
+    font-weight: bold;
+
+}
+
+
+.boton{
+    border:none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+
+.contacto1{
+    color:#ffffff;
+    text-align: center;
+}
+
+.contactoC{
+    margin-top: 35px;
+}
+
+
+
+
+
+
+
+
+
+/**/
