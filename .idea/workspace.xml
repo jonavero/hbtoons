@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="977bcbbd-6d1c-4385-94ad-dd2295314a37" name="Default" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/90a8c93e-e80e-4ba5-aedb-6c5d14b610d1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/90a8c93e-e80e-4ba5-aedb-6c5d14b610d1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/storage_v2/_src_/database/hbtoons_development.W64ZHg/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/storage_v2/_src_/database/hbtoons_development.W64ZHg/schema/pg_toast.33HYYw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/series/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/series/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/.sprockets-manifest-a571fc1d926b94c4f1f643b2d24d37a9.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/.sprockets-manifest-a571fc1d926b94c4f1f643b2d24d37a9.json" afterDir="false" />
-    </list>
+    <list default="true" id="977bcbbd-6d1c-4385-94ad-dd2295314a37" name="Default" comment="1" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -113,12 +100,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console_5.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a53d1c7b-8fcd-45b8-9c44-c4680e760e1a/console_5.sql">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="hbtoons_prod_public_series1.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hbtoons_prod_public_series1.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="205" column="1415" lean-forward="true" selection-start-line="203" selection-end-line="205" selection-end-column="1415" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="capitulos" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hbtoons_prod_public_capitulos1.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hbtoons_prod_public_capitulos1.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="13026" column="343" lean-forward="true" selection-start-line="12763" selection-end-line="13026" selection-end-column="343" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="capitulos" pinned="false" current-in-tab="false">
         <entry file="das://a53d1c7b-8fcd-45b8-9c44-c4680e760e1a/database/hbtoons_prod/schema/public/table/capitulos">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -177,6 +177,7 @@
       <find>headerT</find>
       <find>config.cache_cla</find>
       <find>marcador-warner</find>
+      <find>12766</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -300,7 +301,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="XML&#10;Oracle&#10;TEXT&#10;PostgreSQL" />
     <property name="database.data.extractors.current.id" value="Tab-separated (TSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Iron MAn Anime - Los Castores Cascarrabias - Johnny Bravo.csv" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hbtoons_prod_public_series1.sql" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="project.settings.patched" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -502,7 +503,7 @@
       <workItem from="1553552796858" duration="4752000" />
       <workItem from="1553558892561" duration="2747000" />
       <workItem from="1553562740090" duration="5323000" />
-      <workItem from="1555207149587" duration="3684000" />
+      <workItem from="1555207149587" duration="5299000" />
     </task>
     <servers />
   </component>
@@ -539,7 +540,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236807000" />
+    <option name="totallyTimeSpent" value="238422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="-11" width="1381" height="912" extended-state="6" />
@@ -589,14 +590,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://fe75b0a1-df69-4841-a1a7-e00ac46c2146/database/hbtoons_development/schema/public/table/capitulos" />
-    <entry file="file://$PROJECT_DIR$/app/models/capitulo.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/90a8c93e-e80e-4ba5-aedb-6c5d14b610d1/console_2.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -900,9 +893,6 @@
     <entry file="file://$PROJECT_DIR$/Capitulos_temp.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a53d1c7b-8fcd-45b8-9c44-c4680e760e1a/console_5.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/capitulos_2019_04_13_22_27_28.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -917,6 +907,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://a53d1c7b-8fcd-45b8-9c44-c4680e760e1a/database/hbtoons_prod/schema/public/table/capitulos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a53d1c7b-8fcd-45b8-9c44-c4680e760e1a/console_5.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hbtoons_prod_public_capitulos1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="13026" column="343" lean-forward="true" selection-start-line="12763" selection-end-line="13026" selection-end-column="343" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://a53d1c7b-8fcd-45b8-9c44-c4680e760e1a/database/hbtoons_prod/schema/public/table/series">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -924,10 +931,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://a53d1c7b-8fcd-45b8-9c44-c4680e760e1a/database/hbtoons_prod/schema/public/table/capitulos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/hbtoons_prod_public_series1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="205" column="1415" lean-forward="true" selection-start-line="203" selection-end-line="205" selection-end-column="1415" />
         </state>
       </provider>
     </entry>
