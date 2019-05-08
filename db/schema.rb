@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 20180603162654) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "hstore"
 
   create_table "capitulos", force: :cascade do |t|
     t.string "Titulo"
@@ -22,11 +23,16 @@ ActiveRecord::Schema.define(version: 20180603162654) do
     t.text "Descripcion"
     t.integer "Episodio"
     t.bigint "Serie_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "created_at", null: false
+    t.string "updated_at", null: false
     t.bigint "temporada_id"
     t.index ["Serie_id"], name: "index_capitulos_on_Serie_id"
     t.index ["temporada_id"], name: "index_capitulos_on_temporada_id"
+  end
+
+  create_table "capitulos_temp", id: :integer, default: -> { "nextval('capitulos_id_seq'::regclass)" }, force: :cascade do |t|
+    t.string "Titulo"
+    t.string "Video"
   end
 
   create_table "categoria", force: :cascade do |t|
