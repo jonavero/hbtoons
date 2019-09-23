@@ -45,8 +45,12 @@
                 <span class="marcador marcador-marvel">
                   Marvel
                 </span>
+              <% when 8 %>
+                <span class="marcador marcador-otros">
+                  Otros
+                </span>
 
-                                    <% end %>
+              <% end %>
 
 
               <span class="marcador marcador-ano"><%=s.Ano %></span>
@@ -84,6 +88,7 @@
         <li><%= button_to 'Disney', inicio_path, method: :get, params: {Categoria_id: '5'}, :class => "boton btn-disney" %> <li>
         <li><%= button_to 'Warner Channel', inicio_path, method: :get, params: {Categoria_id: '6'}, :class => "boton btn-warner" %> </li>
         <li><%= button_to 'Marvel', inicio_path, method: :get, params: {Categoria_id: '7'}, :class => "boton btn-marvel" %> </li>
+        <li><%= button_to 'Otros', inicio_path, method: :get, params: {Categoria_id: '8'}, :class => "boton btn-otros" %> </li>
       <!--  <li> <%= button_to 'Todas las Series', inicio_path, method: :get, params: {Categoria_id: '1'}, :class => "boton btn-todas-series" %> </li>-->
 
 
@@ -129,6 +134,10 @@
                                                        <span class="marcador marcador-marvel">
                                                          Marvel
                                                        </span>
+                <% when 8 %>
+                                  <span class="marcador marcador-otros">
+                                    Otros
+                                  </span>
                     <% end %>
 
 
