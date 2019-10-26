@@ -2,7 +2,7 @@
 <dataSource name="hbtoons_prod@localhost">
   <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.8">
     <root id="1">
-      <ServerVersion>9.5.17</ServerVersion>
+      <ServerVersion>9.5.19</ServerVersion>
     </root>
     <database id="2" parent="1" name="hbtoons_prod">
       <ObjectId>49631</ObjectId>
@@ -28,7 +28,7 @@
     </role>
     <schema id="6" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2019-09-22.23:52:00.735</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2019-10-26.18:53:25.111</IntrospectionTimestamp>
       <IntrospectionStateNumber>14010</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
