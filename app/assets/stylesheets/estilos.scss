@@ -1102,9 +1102,32 @@ label{
 }
 
 
+.publicidaHome{
+  width: 50%;
+  text-align: center;
+  margin-left: 350px;
+}
+@media screen and (max-width: 480px) and (min-width:320px)  {
+  .publicidadContainer #container-92d29fda4c7ec1a7988b987caf548b77{
+    display: flex;
+  }
+}
 
-
-
+@media screen and (max-width: 480px) and (min-width:320px)  {
+.publicidadCapitulo{
+  width: 50%;
+  float: left;
+  display: flex;
+  margin-left: 75px;
+}
+}
+@media screen and (max-width: 320px) and (min-width:480px)  {
+  .publicidadCapitulo{
+    width: 50%;
+    float: right;
+    display: flex;
+  }
+}
 
 
 
