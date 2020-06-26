@@ -1,103 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>LACartoons</title>
-    <%= csrf_meta_tags %>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag    'bootstrap.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag    'font-awesome.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag    'estilos', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+<head>
+  <title>LACartoons</title>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'bootstrap.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'font-awesome.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'estilos', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 
 
-    <meta charset="utf-8">
-    <meta name="description" content="Lacartoons es traído a ustedes para recordar aquellos momentos que pasábamos frente al televisor cuando no sentíamos preocupación de nada.">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="application-name" content="">
+  <meta charset="utf-8">
+  <meta name="description" content="Lacartoons es traído a ustedes para recordar aquellos momentos que pasábamos frente al televisor cuando no sentíamos preocupación de nada.">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="application-name" content="">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123750673-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123750673-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+      function gtag() {
+          dataLayer.push(arguments);
+      }
 
-        gtag('js', new Date());
+      gtag('js', new Date());
 
-        gtag('config', 'UA-123750673-1');
-    </script>
-
-
-  </head>
-
-  <body data-turbolinks="false">
-
-  <header class="headerTitulo parallax">
-    <h1 class="text-center"> <%=link_to 'LACARTOONS',inicio_path, class:'hbtoonh1'%></h1>
-    <span class="icono-menu fa fa-bars"></span>
-  </header>
-
-  <nav class="menu">
-    <div class="">
-      <ul class="navegacion">
-        <li><span class="fa fa-home"><%=link_to 'Inicio',inicio_path%></span></li>
-        <li><%=link_to 'Categorias',inicio_path%></li>
-        <li><%= link_to 'Contactos', contacto_path %></li>
-      </ul>
+      gtag('config', 'UA-123750673-1');
+  </script>
 
 
-        <%= form_tag inicio_path,method: :get,:class=>'formulario-buscar' do %>
-        <%= text_field_tag :Titulo,params[:Titulo],:class=>'inputS',:placeholder=>'Buscar tu serie' %>
-        <%= submit_tag  '',:class=>'fa fa-search noBorden' %>
-        <button class="fa fa-search" type="seach" name="button"></button>
-      <% end %>
-    </div>
-  </nav>
+</head>
+
+<body data-turbolinks="false">
+
+<header class="headerTitulo parallax">
+  <h1 class="text-center"> <%= link_to 'LACARTOONS', inicio_path, class: 'hbtoonh1' %></h1>
+  <span class="icono-menu fa fa-bars"></span>
+</header>
+
+<nav class="menu">
+  <div class="">
+    <ul class="navegacion">
+      <li><span class="fa fa-home"><%= link_to 'Inicio', inicio_path %></span></li>
+      <li><%= link_to 'Categorias', inicio_path %></li>
+      <li><%= link_to 'Contactos', contacto_path %></li>
+    </ul>
+
+
+    <%= form_tag inicio_path, method: :get, :class => 'formulario-buscar' do %>
+      <%= text_field_tag :Titulo, params[:Titulo], :class => 'inputS', :placeholder => 'Buscar tu serie' %>
+      <%= submit_tag '', :class => 'fa fa-search noBorden' %>
+      <button class="fa fa-search" type="seach" name="button"></button>
+    <% end %>
+  </div>
+</nav>
 
 
 
 
-    <%= yield %>
+<%= yield %>
 
-  <footer class="footer-pagina">
-    <div class="container">
-      <div class="row">
-        <div class=" contenido-footer">
-          <p class="text-center"><%=Time.now.year %> - LACartoons. All right reserved</p>
-          <div class="redes-sociales">
-            <ul>
-              <li><a class="fa btn-facebook fa-facebook" target="_blank" href="https://bit.ly/2SWUKin"></a></li>
-              <li><a class="fa btn-instagram fa-instagram" target="_blank" href="https://bit.ly/2StPyn4"></a></li>
-            </ul>
-          </div>
+<footer class="footer-pagina">
+  <div class="container">
+    <div class="row">
+      <div class=" contenido-footer">
+        <p class="text-center"><%= Time.now.year %> - LACartoons. All right reserved</p>
+        <div class="redes-sociales">
+          <ul>
+            <li><a class="fa btn-facebook fa-facebook" target="_blank" href="https://bit.ly/2SWUKin"></a></li>
+            <li><a class="fa btn-instagram fa-instagram" target="_blank" href="https://bit.ly/2StPyn4"></a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </footer>
-  <%#= javascript_include_tag 'jquery.js', 'data-turbolinks-track': 'reload' %>
-  <%#= javascript_include_tag 'bootstrap.min.js', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'main.js', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'menu.js', 'data-turbolinks-track': 'reload' %>
- <!-- <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/menu.js"></script> -->
-  <!--
-   <script async="async" data-cfasync="false" src="//pl15541632.passtechusa.com/92d29fda4c7ec1a7988b987caf548b77/invoke.js"></script>
-   <div id="container-92d29fda4c7ec1a7988b987caf548b77" class="publicidadHome"></div> <br> <br>
-  -->
-  <script type='text/javascript' src='//pl15561240.passtechusa.com/5d/23/84/5d23845a305fdbee6e9a0ecc44bd768c.js'></script>
+  </div>
+</footer>
+<%#= javascript_include_tag 'jquery.js', 'data-turbolinks-track': 'reload' %>
+<%#= javascript_include_tag 'bootstrap.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'main.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'menu.js', 'data-turbolinks-track': 'reload' %>
+<!-- <script src="js/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/main.js"></script>
+ <script src="js/menu.js"></script> -->
+<!--
+ <script async="async" data-cfasync="false" src="//pl15541632.passtechusa.com/92d29fda4c7ec1a7988b987caf548b77/invoke.js"></script>
+ <div id="container-92d29fda4c7ec1a7988b987caf548b77" class="publicidadHome"></div> <br> <br>
+-->
+<script type='text/javascript' src='//pl15561240.passtechusa.com/5d/23/84/5d23845a305fdbee6e9a0ecc44bd768c.js'></script>
+
+<p align="center">
+  <script type="text/javascript">
+      atOptions = {
+          'key': '8e9868dab460ab5bcd3c64daa7ebf71c',
+          'format': 'iframe',
+          'height': 90,
+          'width': 728,
+          'params': {}
+      };
+      document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/8e9868dab460ab5bcd3c64daa7ebf71c/invoke.js"></scr' + 'ipt>');
+  </script>
+
+</p>
 
 
+</body>
 
 
-   </body>
-
-
-
- </html>
+</html>
