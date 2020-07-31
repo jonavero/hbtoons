@@ -1,0 +1,1333 @@
+@charset "UTF-8";
+/*Estilos generales*/
+/* line 5, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'LuckiestGuy-Regular';
+  src: url(/assets/LuckiestGuy-Regular-75fd4345a440e5401a973261444954c7c66f242e334edaffb1e10fe323718b46.woff2) format("woff2"), url(/assets/LuckiestGuy-Regular-cfbdd68a039f92df51cf3721506af6242e64594c6325fe0bedbeff3fe385d980.ttf) format("truetype"), url(/assets/LuckiestGuy-Regular-b634bf1d064af44e576a252d193d3be5cf9eebb4a7609fc6187f84e02347f18d.woff) format("woff"), url(/assets/LuckiestGuy-Regular-a281312770e19a5fbac60e3e03333ed729116c469c0061fab87c6fbb7d1afad0.svg#LuckiestGuy-Regular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url(/assets/OpenSans-Regular-d90fd15b1195709c30038dc52c6836fe9804a48d419134a4f19a3b9856007a8f.woff2) format("woff2"), url(/assets/OpenSans-Regular-13c03e22a633919beb2847c58c8285fb8a735ee97097d7c48fd403f8294b05f8.ttf) format("truetype"), url(/assets/OpenSans-Regular-00e3419ca74c730e4e2d4c900f407b135d68ea3cc1ff69b3073967a8d3121c54.woff) format("woff"), url(/assets/OpenSans-Regular-78e0a93ad25b1238bd5100b82ec7100bc961e575949a5486abd64a047392ea3f.svg#LuckiestGuy-Regular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url(/assets/OpenSans-SemiBold-a05c7bd787c4e9adca2325bda23df2acda8bd046d4a0242e76b395541b6b9c21.woff2) format("woff2"), url(/assets/OpenSans-SemiBold-b4c2050b25d3d296d5cf58589ca00816dc72df42262c2f629d5c6a984a161aa4.ttf) format("truetype"), url(/assets/OpenSans-SemiBold-ef7caeee776015fb1147ae8fb100b16bdd01f780b8108237d8b2a79ff9902bf7.woff) format("woff"), url(/assets/OpenSans-SemiBold-e3e3869847690116895848580805977ac58de316cf6e4c287d8a9b3299914864.svg#LuckiestGuy-Regular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 43, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+body {
+  font-family: 'OpenSans-Regular';
+}
+
+/*Estilos comunes*/
+/* line 48, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.parallax::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(0.5);
+  z-index: -1;
+}
+
+/* line 60, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 66, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 70, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 74, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 79, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+body {
+  background: #212121;
+}
+
+/* line 82, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/* line 87, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+li {
+  list-style: none;
+}
+
+/* line 91, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.marcador {
+  padding: 5px;
+  background: red;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-right: 7px;
+  color: #fff;
+}
+
+/* line 100, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn {
+  transition: all 0.2s ease;
+}
+
+/* line 104, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.marcador-nickelodeon,
+.btn-nickelodeon {
+  background: #FF6700;
+}
+
+/* line 109, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-nickelodeon:hover {
+  background: #D66111;
+}
+
+/* line 112, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.marcador-disney,
+.btn-disney {
+  background: #1E88E5;
+}
+
+/* line 116, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.marcador-marvel,
+.btn-marvel {
+  background: #B71C1C;
+}
+
+/* line 121, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-marvel:hover {
+  background: #cf2200;
+}
+
+/* line 125, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.marcador-warner,
+.btn-warner {
+  background: #1b6d85;
+}
+
+/* line 130, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-warner:hover {
+  background: #035b85;
+}
+
+/* line 135, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-disney:hover {
+  background: #1665AC;
+}
+
+/* line 138, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.marcador-hanna,
+.btn-hanna {
+  background: #795548;
+}
+
+/* line 142, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-hanna:hover {
+  background: #5D4037;
+}
+
+/* line 145, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.marcador-cartoon,
+.btn-cartoon {
+  background: #6D6868;
+}
+
+/* line 149, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-cartoon:hover {
+  background: #535353;
+}
+
+/* line 152, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.marcador-foxKids,
+.btn-foxKids {
+  background: #E53935;
+}
+
+/* line 156, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-foxKids:hover {
+  background: #B33633;
+}
+
+/* line 160, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.marcador-otros,
+.btn-otros {
+  background: #25791f;
+}
+
+/* line 165, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-otros:hover {
+  background: #07560b;
+}
+
+/* line 169, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.marcador-ano {
+  background: #C62828;
+}
+
+/* line 172, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-todas-series {
+  background: #009688;
+}
+
+/* line 175, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-todas-series:hover {
+  background: #077E73;
+}
+
+/* line 179, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.valoracion {
+  color: #fff;
+  position: absolute;
+  right: 15px;
+}
+
+/* line 185, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.valoracion1 > span,
+.valoracion > span {
+  margin-left: 3px;
+  color: #FFEB3B;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 192, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .seccion {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* line 199, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+h2.tituloSeccion1 {
+  font-size: 2.2rem;
+  color: #6D6868;
+}
+
+/* line 204, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+h2.tituloSeccion1::after {
+  content: " ";
+  margin: 0 auto;
+  background: #6D6868;
+  width: 100%;
+  height: 5px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 214, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-instagram {
+  background: #E4405F;
+  transition: all 0.3s ease;
+}
+
+/* line 218, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-instagram:hover {
+  background: #C5334F;
+}
+
+/* line 222, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-facebook {
+  background: #3B5999;
+  transition: all 0.3s ease;
+}
+
+/* line 227, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-facebook:hover {
+  background: #2E4576;
+}
+
+/* line 231, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-twitter {
+  background: #55ACEE;
+  transition: all 0.3s ease;
+}
+
+/* line 236, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-twitter:hover {
+  background: #4289BF;
+}
+
+/* line 240, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.error {
+  color: #971010;
+  height: 10px;
+  margin: 5px;
+  display: block;
+  font-family: "OpenSans-SemiBold";
+}
+
+/* line 248, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-enviar {
+  background: #971010;
+  color: #fff;
+  transition: all 0.2s ease;
+  padding: 5px 30px;
+}
+
+/* line 254, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-enviar:hover {
+  background: #750F0F;
+  color: #fff;
+}
+
+/*Pagina principal*/
+/*Header*/
+/* line 262, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+header.headerTitulo {
+  position: relative;
+  height: 200px;
+}
+
+/* line 270, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+header.headerTitulo::before {
+  background-image: url(/assets/parallax-b2a494d48999cba983c0dbb3de23e16aefa32fc41dbe9a45d3f08b1a63ccec81.jpg);
+  content: ' ';
+}
+
+/* line 274, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+header.headerTitulo h1 {
+  margin: 0;
+  padding: 10px 0px;
+  z-index: 1000;
+  color: #fff;
+  font-family: 'LuckiestGuy-Regular';
+  font-size: 3rem;
+  line-height: 150px;
+}
+
+/* line 284, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+span.icono-menu {
+  position: absolute;
+  right: 50px;
+  top: 10px;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+/* line 295, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+span.icono-menu:hover {
+  color: #FF7E7E;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 300, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  span.icono-menu {
+    right: 10px;
+  }
+}
+/*menu*/
+/* line 308, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+nav.menu {
+  background: #B71C1C;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5px 0;
+}
+
+/* line 316, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+nav.menu > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 70px;
+}
+
+/* line 322, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+ul.navegacion {
+  align-self: center;
+  margin: 0;
+  margin-right: 25px;
+}
+
+/* line 328, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+ul.navegacion > li a span {
+  margin-right: 5px;
+}
+
+/* line 331, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+ul.navegacion li {
+  list-style: none;
+  float: left;
+  padding: 5px 5px;
+}
+
+/* line 337, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+ul.navegacion li a {
+  font-family: "OpenSans-SemiBold";
+  text-align: center;
+  font-size: 1.45rem;
+  transition: all 0.2s;
+}
+
+/* line 343, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+ul.navegacion li a:hover {
+  color: #FF7E7E;
+}
+
+/* line 347, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+form.formulario-buscar .inputS {
+  background: none;
+  border: none;
+  outline: none;
+  color: #FF7E7E;
+  font-style: italic;
+  font-size: 1.4rem;
+  width: 120px;
+}
+
+/* line 357, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.noBorden {
+  border: none;
+}
+
+/* line 360, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+form.formulario-buscar > .inputS::-webkit-input-placeholder {
+  font-style: italic;
+  color: #FF7E7E;
+}
+
+/* line 365, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+form.formulario-buscar button {
+  background: none;
+  border: none;
+  color: #FF7E7E;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 372, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  ul.navegacion {
+    margin: 0;
+    width: 100%;
+  }
+
+  /* line 376, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  ul.navegacion li {
+    float: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  /* line 380, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  ul.navegacion li:last-child {
+    border: none;
+  }
+
+  /* line 384, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  ul.navegacion li a {
+    display: block;
+    padding: 5px 0;
+    width: 100%;
+  }
+
+  /* line 390, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  nav.menu > div {
+    flex-direction: column-reverse;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  /* line 396, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  nav.menu {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  /* line 401, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  form.formulario-buscar {
+    width: 90%;
+    padding: 10px 0;
+    background: #971010;
+    border-radius: 5px;
+  }
+
+  /* line 407, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  form.formulario-buscar input {
+    width: 90%;
+    padding-left: 15px;
+  }
+
+  /* line 411, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  span.icono-menu {
+    display: block;
+  }
+}
+/*seccion proximamente*/
+/* line 417, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+h2.tituloSeccion::after {
+  content: '';
+  margin: 0 auto;
+  background-image: url(/assets/circulo-38d0d1baab41ad89d36183d0754a60c67d49065851ddc6fb65e1bf41fd939280.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 50px;
+  margin-top: 10px;
+  display: block;
+}
+
+/* line 427, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+h2.tituloSeccion {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #6D6868;
+}
+
+/* line 433, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.serie img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+/* NOTE: pasar a la lista de estilos comunes  */
+/* line 443, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.serieProxima {
+  width: 350px;
+  height: 200px;
+  margin: 15px 5px;
+}
+
+/* line 448, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.informacion-serie {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+/* line 455, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.informacion-serie > div {
+  padding: 5px 15px 15px 15px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* line 459, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.nombre-serie {
+  font-family: 'OpenSans-SemiBold';
+  margin-bottom: 7px;
+  color: #fff;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+/* line 466, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.serie {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* line 472, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.serie:hover img {
+  transform: scale(1.5);
+  filter: brightness(1);
+}
+
+/* line 477, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.serie:hover .informacion-serie {
+  bottom: -100px;
+}
+
+/* line 480, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.conjuntos-series {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 380px) {
+  /* line 487, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .seccion {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+/*section serie clasicas*/
+/* line 495, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+section.seriesClasicas p {
+  padding: 5px 30px;
+}
+
+/*section categorias*/
+/* line 501, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.subtitulo {
+  font-size: 2rem;
+  color: #6D6868;
+}
+
+/* line 506, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+section.categorias ul.botontes-categorias {
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 512, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+section.categorias ul.botontes-categorias li {
+  margin: 5px 7px;
+}
+
+/* line 517, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+section.categorias ul.botontes-categorias li a:hover {
+  color: #fff;
+}
+
+/* line 521, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.serie-Activa {
+  width: 225px;
+  height: 320px;
+  margin: 15px 5px;
+}
+
+/* line 527, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.conjuntos-series > a {
+  margin: 10px;
+}
+
+/* line 530, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.paginacion {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 535, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.paginacion ul li a {
+  background: #6D6868;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* line 541, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.paginacion ul li a:hover {
+  background: #464343;
+  color: #fff;
+}
+
+/* line 546, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.paginacion ul li a {
+  margin: 5px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 552, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .paginacion ul li a {
+    margin: 0px;
+  }
+}
+/* line 557, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+footer.footer-pagina {
+  background: #393636;
+  padding: 20px 5px;
+  /* position: absolute;
+  bottom: 0;
+  width: 100%; */
+}
+
+/* line 565, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.contenido-footer {
+  position: relative;
+}
+
+/* line 568, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.contenido-footer p {
+  margin: 0px;
+  color: #AFAEAE;
+}
+
+/* line 572, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.redes-sociales {
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+}
+
+/* line 578, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.redes-sociales ul li a {
+  padding: 100%;
+}
+
+/* line 582, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.redes-sociales ul li.redes {
+  float: left;
+  margin: 5px;
+  background: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* line 596, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.donacion {
+  display: flex;
+  margin-bottom: -35px;
+  margin-top: -12px;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 605, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  div.redes-sociales {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}
+/*pagina contactos*/
+/* line 613, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.contenedor-formulario-contactos {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 50px 0px;
+  width: 100%;
+}
+
+/* line 619, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+form.formulario-contacto {
+  width: 70%;
+}
+
+/* line 623, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+form.formulario-contacto > div:first-child {
+  display: flex;
+  width: 100%;
+}
+
+/* line 628, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+form.formulario-contacto > div:first-child > div:first-child {
+  margin-right: 25px;
+}
+
+/* line 631, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+form.formulario-contacto > div:first-child > div {
+  width: 50%;
+}
+
+/* line 635, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+form.formulario-contacto > div:nth-child(2) {
+  margin-top: 5px;
+}
+
+/* line 639, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.estilo-fomulario textarea,
+.estilo-fomulario input[type="text"] {
+  background: #313030;
+  border: none;
+  color: #706D6D;
+}
+
+/* line 646, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.estilo-fomulario textarea::-webkit-input-placeholder,
+.estilo-fomulario input[type="text"]::-webkit-input-placeholder {
+  color: #706D6D;
+}
+
+/* line 651, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.estilo-fomulario textarea {
+  resize: none;
+}
+
+/* line 655, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+form.formulario-contacto > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 662, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  form.formulario-contacto {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 668, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  form.formulario-contacto > div:first-child {
+    flex-wrap: wrap;
+  }
+
+  /* line 672, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  form.formulario-contacto > div:first-child > div {
+    width: 100%;
+  }
+
+  /* line 676, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  form.formulario-contacto > div:first-child > div:first-child {
+    margin-right: 0px;
+  }
+}
+/*Pagina series*/
+/* line 684, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.all-serie {
+  position: relative;
+  margin-top: 50px;
+}
+
+/* line 688, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.subtitulo-serie-seccion > span {
+  margin-left: 10px;
+}
+
+/* line 692, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.all-serie > div {
+  padding: 10px 0px 20px 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 699, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.subtitulo-serie-seccion:after {
+  content: " ";
+  margin: 0 auto;
+  background: #6D6868;
+  width: 65%;
+  height: 5px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 709, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.subtitulo-serie-seccion {
+  font-family: "OpenSans-SemiBold";
+  color: #fff;
+  font-size: 2.2rem;
+  margin-top: 20px;
+}
+
+/* line 716, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+img.fondo-serie-seccion {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.3);
+  z-index: -1;
+}
+
+/* line 725, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.contenedor-informacion-serie {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* line 732, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.imagen-serie {
+  margin-right: 25px;
+}
+
+/* line 735, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.imagen-serie > div {
+  width: 170px;
+  margin: 0 auto;
+  margin-right: 0;
+}
+
+/* line 740, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.imagen-serie > div > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* line 746, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.informacion-serie-seccion {
+  width: 75%;
+}
+
+/* line 750, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.informacion-serie-seccion > p {
+  font-family: 'OpenSans-SemiBold';
+}
+
+/* line 754, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.informacion-serie-seccion > p > span {
+  margin: 5px;
+  color: #BBBABA;
+}
+
+/* line 759, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.informacion-serie-seccion .marcador-año {
+  color: #fff;
+}
+
+/* line 763, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.informacion-serie-seccion > p:last-child span {
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 780px) {
+  /* line 768, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .serie-seccion {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 777, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  div.contenedor-informacion-serie {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* line 783, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  div.imagen-serie {
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
+
+  /* line 788, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .informacion-serie-seccion {
+    width: 100% !important;
+  }
+}
+/* seccion episodio*/
+/* line 796, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.subtitulo-linea::after {
+  content: " ";
+  margin: 0 auto;
+  background: #6D6868;
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* line 807, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.subtitulo-linea {
+  font-family: "OpenSans-SemiBold";
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* line 813, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.contenedor-episodio-temporada {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* line 818, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.contenedor-episodio-temporada div.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 824, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.contenedor-episondios > div,
+.tempora,
+.series-recomendadas {
+  background: #302E2E;
+  padding: 5px 20px 20px 20px;
+}
+
+/* line 831, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.temporada-recomendaciones {
+  width: 30%;
+}
+
+/* line 835, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.contenedor-episondios {
+  width: 60%;
+  margin-right: 20px;
+}
+
+/* line 841, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.tempora {
+  margin-bottom: 20px;
+}
+
+/* line 844, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.estilo-temporada a,
+h4.estilo-temporada {
+  padding: 12px 15px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "OpenSans-Regular";
+}
+
+/* line 852, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.estilo-temporada a {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 856, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.estilo-temporada a:hover {
+  background: #C62828;
+}
+
+/* line 860, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.estilo-temporada-activo {
+  background: #C62828;
+}
+
+/* line 864, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+section.contenedor-episodio-temporada .fa-play {
+  margin-right: 5px;
+}
+
+/* line 868, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+ul.listas-de-episodion li a {
+  display: block;
+  border-bottom: 3px solid #6D6868;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+/* line 874, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+ul.listas-de-episodion li a:hover {
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid #6D6868;
+  border-bottom-color: #C62828;
+  color: #C62828;
+}
+
+/* line 881, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.informcion-serie-recomendada {
+  height: 200px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* line 886, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.series-recomendadas > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 892, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.series-recomendadas > div > a {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 615px) {
+  /* line 897, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .contenedor-episodio-temporada div.row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* line 902, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .temporada-recomendaciones {
+    width: 90%;
+  }
+
+  /* line 906, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .contenedor-episondios {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+}
+/*pagina serie-video*/
+/* line 915, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.serie-video-informacion h3 {
+  font-size: 1.7rem;
+  color: #BBBABA;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+/* line 923, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.serie-video-informacion h3 > span {
+  color: #fff;
+}
+
+/* line 926, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.serie-video-informacion {
+  width: 70%;
+  margin-right: 20px;
+}
+
+/* line 930, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.serie-video-informacion > iframe {
+  width: 100%;
+  height: 450px;
+}
+
+/* line 934, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+section.contenedor-video-recomendaciones {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* line 938, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+aside.temporada-recomendaciones-series {
+  margin-top: 105px;
+  width: 30%;
+}
+
+/* line 942, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+section.contenedor-video-recomendaciones .row {
+  display: flex;
+}
+
+/* line 947, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.resena-serie {
+  background: #313030;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* line 954, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.resena-serie h4 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "OpenSans-SemiBold";
+}
+
+/* line 959, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.resena-serie p {
+  color: #BBBABA;
+}
+
+/* line 963, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+section.contenedor-video-recomendaciones .contenedor-episondios {
+  width: 100%;
+}
+
+/* line 968, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+section.contenedor-video-recomendaciones .contenedor-episondios > div {
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+}
+
+/* line 973, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.comentario-serie .formulario-contacto {
+  width: 100%;
+}
+
+/* line 977, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.comentario-serie form.formulario-contacto > div:last-child {
+  display: block;
+  padding-bottom: 15px;
+}
+
+/* line 982, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.contenedor-comentarios > div:first-child > p {
+  color: #6D6868;
+  font-family: "OpenSans-SemiBold";
+  font-size: 1.5rem;
+}
+
+/* line 988, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.contenedor-comentarios > div:first-child {
+  border-bottom: 2px solid #6D6868;
+}
+
+/* line 992, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.imagen-persona img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* line 999, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.comentario-por-persona {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+/* line 1004, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.imagen-persona {
+  display: flex;
+  align-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* line 1010, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+div.imagen-persona > p {
+  margin-left: 15px;
+  font-size: 1.2rem;
+}
+
+/* line 1015, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+span.fecha-publicacion {
+  color: #7A7474;
+  font-size: 1.1rem;
+  margin-left: 600px;
+}
+
+/* line 1021, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.comentario-persona {
+  margin-bottom: 20px;
+}
+
+/* line 1024, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.comentario-persona p {
+  color: #BBBABA;
+  font-size: 1.2rem;
+  margin-left: 55px;
+}
+
+/* line 1030, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-responder-comentario {
+  font-size: 1.2rem;
+  background: #707070;
+  float: right;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+/* line 1038, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.btn-responder-comentario:hover {
+  background: #585454;
+  color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 1044, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  div.serie-video-informacion > iframe {
+    height: 250px;
+  }
+
+  /* line 1048, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  section.contenedor-video-recomendaciones {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 1055, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  div.serie-video-informacion {
+    width: 100%;
+  }
+
+  /* line 1058, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .contenedor-video-recomendaciones aside.temporada-recomendaciones-series {
+    display: none;
+  }
+
+  /* line 1062, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  div.serie-video-informacion > iframe {
+    height: 350px;
+  }
+}
+/*nuevo style*/
+/* line 1072, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.login {
+  width: 50%;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+/* line 1078, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+label {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* line 1083, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.alertaL {
+  color: red;
+  font-weight: bold;
+}
+
+/* line 1090, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.boton {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 1105, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.contacto1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 1110, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.contactoC {
+  margin-top: 35px;
+}
+
+/* line 1115, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+.publicidadHome {
+  width: 50%;
+  text-align: center;
+  margin-left: 350px;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  /* line 1123, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .publicidadHome {
+    width: 50%;
+    float: left;
+    display: flex;
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  /* line 1135, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .publicidadContainer #container-92d29fda4c7ec1a7988b987caf548b77 {
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  /* line 1141, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .publicidadCapitulo {
+    width: 50%;
+    float: left;
+    display: flex;
+    margin-left: 75px;
+  }
+}
+@media screen and (max-width: 320px) and (min-width: 480px) {
+  /* line 1149, /home/jcastillo/Desktop/hbtoons/app/assets/stylesheets/estilos.scss */
+  .publicidadCapitulo {
+    width: 50%;
+    float: right;
+    display: flex;
+  }
+}
+/**/

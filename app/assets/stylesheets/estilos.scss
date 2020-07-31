@@ -578,7 +578,7 @@ h2.tituloSeccion1::after{
       padding: 100%;
     }
 
-    div.redes-sociales ul li{
+    div.redes-sociales ul li.redes{
         float: left;
         margin: 5px;
         background: red;
@@ -590,6 +590,15 @@ h2.tituloSeccion1::after{
         justify-content: center;
         overflow: hidden;
     }
+
+
+div.donacion{
+  display: flex;
+  margin-bottom: -35px;
+  margin-top: -12px;
+}
+
+
 
     @media only screen and (max-width:500px){
       div.redes-sociales{
