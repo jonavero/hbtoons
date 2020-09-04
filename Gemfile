@@ -39,6 +39,8 @@ gem 'jquery-rails'
 
 gem 'will_paginate-bootstrap4'
 
+gem 'puma_worker_killer'
+
 #new gem para subir imagenes
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
