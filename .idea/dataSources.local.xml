@@ -2,45 +2,67 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="postgres@localhost" uuid="90a8c93e-e80e-4ba5-aedb-6c5d14b610d1">
-      <database-info product="PostgreSQL" version="9.5.16" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+      <database-info product="PostgreSQL" version="9.5.16" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2" dbms="POSTGRES" exact-version="9.5.16">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <introspection-schemas>hbtoons_development:*|postgres:*</introspection-schemas>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database">
+            <name qname="hbtoons_development" />
+            <name qname="postgres" />
+            <node kind="schema" negative="1" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
     <data-source name="Rails hbtoons: production" uuid="dcfb7a66-ffd4-4edb-8633-87d5bc1b28ed">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
       <user-name>postgre</user-name>
+      <schema-mapping />
     </data-source>
     <data-source name="Rails hbtoons: test" uuid="b0192857-c206-4648-9706-41261c96719e">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
       <user-name>postgresql</user-name>
+      <schema-mapping />
     </data-source>
     <data-source name="Rails hbtoons: development" uuid="2bcf1364-a029-48c7-8993-fe9349dfdab1">
-      <database-info product="PostgreSQL" version="9.5.13" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+      <database-info product="PostgreSQL" version="9.5.13" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2" dbms="POSTGRES" exact-version="9.5.13">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <introspection-schemas>hbtoons_development:public</introspection-schemas>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="hbtoons_development">
+            <node kind="schema" qname="public" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
     <data-source name="jdbc:postgresql://ec2-54-217-250-0.eu-west-1.compute.amazonaws.com :5432/d57ijsln4cdj4k" uuid="58c99ff4-a295-48d2-b0fd-467f9edc54d7">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
       <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
       <user-name>waibjiromtoost</user-name>
+      <schema-mapping />
     </data-source>
     <data-source name="hbtoons_prod@localhost" uuid="a53d1c7b-8fcd-45b8-9c44-c4680e760e1a">
-      <database-info product="PostgreSQL" version="9.5.19" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5">
+      <database-info product="PostgreSQL" version="9.5.19" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="9.5.19">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <introspection-schemas>hbtoons_prod:public</introspection-schemas>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="hbtoons_prod">
+            <node kind="schema" qname="public" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
   </component>
 </project>
