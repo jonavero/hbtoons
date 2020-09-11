@@ -225,7 +225,7 @@ DEPENDENCIES
   pg (~> 0.18)
   puma (~> 3.7)
   puma_worker_killer
-  rails (~> 5.1.4)
+  rails (~> 5.1.7)
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
@@ -237,4 +237,4 @@ DEPENDENCIES
   will_paginate-bootstrap4
 
 BUNDLED WITH
-   1.16.1
+   2.1.2
