@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="hbtoons_prod@localhost">
-  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.8">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.19">
     <root id="1">
       <ServerVersion>9.5.19</ServerVersion>
     </root>
     <database id="2" parent="1" name="hbtoons_prod">
       <ObjectId>49631</ObjectId>
       <Current>1</Current>
-      <Visible>1</Visible>
     </database>
     <database id="3" parent="1" name="postgres">
       <ObjectId>12411</ObjectId>
@@ -18,12 +17,10 @@
     <role id="5" parent="1" name="postgres">
       <ObjectId>10</ObjectId>
       <SuperRole>1</SuperRole>
-      <Inherit>1</Inherit>
-      <CreateRole>1</CreateRole>
       <CreateDb>1</CreateDb>
+      <CreateRole>1</CreateRole>
       <CanLogin>1</CanLogin>
       <Replication>1</Replication>
-      <ConnectionLimit>-1</ConnectionLimit>
       <BypassRls>1</BypassRls>
     </role>
     <schema id="6" parent="2" name="public">
@@ -31,7 +28,6 @@
       <IntrospectionTimestamp>2020-08-19.23:30:04.837</IntrospectionTimestamp>
       <IntrospectionStateNumber>31238</IntrospectionStateNumber>
       <Current>1</Current>
-      <Visible>1</Visible>
     </schema>
     <schema id="7" parent="2" name="pg_catalog">
       <ObjectId>11</ObjectId>
@@ -55,64 +51,50 @@
       <ObjectId>49660</ObjectId>
       <StateNumber>13919</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="14" parent="6" name="categoria_id_seq">
       <ObjectId>49672</ObjectId>
       <StateNumber>13920</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="15" parent="6" name="comentariocaps_id_seq">
       <ObjectId>49723</ObjectId>
       <StateNumber>13925</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="16" parent="6" name="comentarios_id_seq">
       <ObjectId>49683</ObjectId>
       <StateNumber>13921</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="17" parent="6" name="series_id_seq">
       <ObjectId>49648</ObjectId>
       <StateNumber>13918</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="18" parent="6" name="temporadas_id_seq">
       <ObjectId>49695</ObjectId>
       <StateNumber>13922</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="19" parent="6" name="usuarios_id_seq">
       <ObjectId>49712</ObjectId>
       <StateNumber>13924</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
     </sequence>
     <object-type id="20" parent="6" name="hstore">
       <ObjectId>49738</ObjectId>
       <StateNumber>13929</StateNumber>
       <SubKind>base-type</SubKind>
-      <SubCategory>user-defined</SubCategory>
       <Definition>-</Definition>
+      <SubCategory>user-defined</SubCategory>
     </object-type>
     <object-type id="21" parent="6" name="ghstore">
       <ObjectId>49822</ObjectId>
       <StateNumber>13929</StateNumber>
       <SubKind>base-type</SubKind>
-      <SubCategory>user-defined</SubCategory>
       <Definition>-</Definition>
+      <SubCategory>user-defined</SubCategory>
     </object-type>
     <table id="22" parent="6" name="ar_internal_metadata">
       <ObjectId>49640</ObjectId>
@@ -120,6 +102,7 @@
     </table>
     <table id="23" parent="6" name="capitulos">
       <ObjectId>49662</ObjectId>
+      <Outdated>1</Outdated>
       <StateNumber>14010</StateNumber>
     </table>
     <table id="24" parent="6" name="capitulos_temp">
@@ -217,7 +200,6 @@
       <ReturnsSet>1</ReturnsSet>
       <Strict>1</Strict>
       <Cost>1.0</Cost>
-      <Rows>1000.0</Rows>
     </routine>
     <routine id="39" parent="6" name="exist">
       <ObjectId>49751</ObjectId>
@@ -257,12 +239,12 @@
     </routine>
     <routine id="43" parent="6" name="get_xmlbinary">
       <ObjectId>49860</ObjectId>
+      <SourceTextLength>312</SourceTextLength>
       <StateNumber>13931</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
       <ResultsDefinition>character varying</ResultsDefinition>
       <LanguageName>plpgsql</LanguageName>
       <RoutineKind>function</RoutineKind>
-      <Cost>100.0</Cost>
     </routine>
     <routine id="44" parent="6" name="ghstore_compress">
       <ObjectId>49826</ObjectId>
@@ -638,7 +620,6 @@
       <ReturnsSet>1</ReturnsSet>
       <Strict>1</Strict>
       <Cost>1.0</Cost>
-      <Rows>1000.0</Rows>
     </routine>
     <routine id="86" parent="6" name="slice">
       <ObjectId>49749</ObjectId>
@@ -667,7 +648,6 @@
       <ReturnsSet>1</ReturnsSet>
       <Strict>1</Strict>
       <Cost>1.0</Cost>
-      <Rows>1000.0</Rows>
     </routine>
     <routine id="89" parent="6" name="tconvert">
       <ObjectId>49773</ObjectId>
@@ -886,8 +866,8 @@
     <key id="117" parent="22" name="ar_internal_metadata_pkey">
       <ObjectId>49647</ObjectId>
       <ColNames>key</ColNames>
-      <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
     </key>
     <column id="118" parent="23" name="id">
       <Position>1</Position>
@@ -896,7 +876,6 @@
       <StateNumber>13947</StateNumber>
       <DefaultExpression>nextval(&apos;public.capitulos_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
-      <SequenceName>capitulos_id_seq</SequenceName>
     </column>
     <column id="119" parent="23" name="Titulo">
       <Position>2</Position>
@@ -970,8 +949,8 @@
     <key id="131" parent="23" name="capitulos_pkey">
       <ObjectId>49670</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>capitulos_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>capitulos_pkey</UnderlyingIndexName>
     </key>
     <foreign-key id="132" parent="23" name="fk_rails_5ad741e65d">
       <ObjectId>49707</ObjectId>
@@ -1010,8 +989,8 @@
     <key id="137" parent="24" name="capitulos_temp_pkey">
       <ObjectId>49906</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>capitulos_temp_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>capitulos_temp_pkey</UnderlyingIndexName>
     </key>
     <column id="138" parent="25" name="id">
       <Position>1</Position>
@@ -1020,7 +999,6 @@
       <StateNumber>13948</StateNumber>
       <DefaultExpression>nextval(&apos;public.categoria_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
-      <SequenceName>categoria_id_seq</SequenceName>
     </column>
     <column id="139" parent="25" name="Descripcion">
       <Position>2</Position>
@@ -1056,8 +1034,8 @@
     <key id="144" parent="25" name="categoria_pkey">
       <ObjectId>49682</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>categoria_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>categoria_pkey</UnderlyingIndexName>
     </key>
     <column id="145" parent="26" name="id">
       <Position>1</Position>
@@ -1066,7 +1044,6 @@
       <StateNumber>13949</StateNumber>
       <DefaultExpression>nextval(&apos;public.comentariocaps_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
-      <SequenceName>comentariocaps_id_seq</SequenceName>
     </column>
     <column id="146" parent="26" name="Nombre">
       <Position>2</Position>
@@ -1118,8 +1095,8 @@
     <key id="154" parent="26" name="comentariocaps_pkey">
       <ObjectId>49733</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>comentariocaps_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>comentariocaps_pkey</UnderlyingIndexName>
     </key>
     <column id="155" parent="27" name="id">
       <Position>1</Position>
@@ -1128,7 +1105,6 @@
       <StateNumber>13950</StateNumber>
       <DefaultExpression>nextval(&apos;public.comentarios_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
-      <SequenceName>comentarios_id_seq</SequenceName>
     </column>
     <column id="156" parent="27" name="Nombre">
       <Position>2</Position>
@@ -1180,8 +1156,8 @@
     <key id="164" parent="27" name="comentarios_pkey">
       <ObjectId>49693</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>comentarios_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>comentarios_pkey</UnderlyingIndexName>
     </key>
     <column id="165" parent="28" name="version">
       <Position>1</Position>
@@ -1198,8 +1174,8 @@
     <key id="167" parent="28" name="schema_migrations_pkey">
       <ObjectId>49639</ObjectId>
       <ColNames>version</ColNames>
-      <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
     </key>
     <column id="168" parent="29" name="id">
       <Position>1</Position>
@@ -1208,7 +1184,6 @@
       <StateNumber>13951</StateNumber>
       <DefaultExpression>nextval(&apos;public.series_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
-      <SequenceName>series_id_seq</SequenceName>
     </column>
     <column id="169" parent="29" name="Titulo">
       <Position>2</Position>
@@ -1332,8 +1307,8 @@
     <key id="189" parent="29" name="series_pkey">
       <ObjectId>49658</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>series_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>series_pkey</UnderlyingIndexName>
     </key>
     <column id="190" parent="30" name="id">
       <Position>1</Position>
@@ -1342,7 +1317,6 @@
       <StateNumber>13952</StateNumber>
       <DefaultExpression>nextval(&apos;public.temporadas_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
-      <SequenceName>temporadas_id_seq</SequenceName>
     </column>
     <column id="191" parent="30" name="Descripcion">
       <Position>2</Position>
@@ -1372,8 +1346,8 @@
     <key id="195" parent="30" name="temporadas_pkey">
       <ObjectId>49705</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>temporadas_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>temporadas_pkey</UnderlyingIndexName>
     </key>
     <column id="196" parent="31" name="id">
       <Position>1</Position>
@@ -1382,7 +1356,6 @@
       <StateNumber>13953</StateNumber>
       <DefaultExpression>nextval(&apos;public.usuarios_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
-      <SequenceName>usuarios_id_seq</SequenceName>
     </column>
     <column id="197" parent="31" name="NombreCompleto">
       <Position>2</Position>
@@ -1436,8 +1409,8 @@
     <key id="205" parent="31" name="usuarios_pkey">
       <ObjectId>49722</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>usuarios_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>usuarios_pkey</UnderlyingIndexName>
     </key>
     <argument id="206" parent="32">
       <Position>1</Position>
