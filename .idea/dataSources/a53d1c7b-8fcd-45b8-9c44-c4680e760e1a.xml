@@ -127,6 +127,7 @@
     </table>
     <table id="29" parent="6" name="series">
       <ObjectId>49650</ObjectId>
+      <Outdated>1</Outdated>
       <StateNumber>13918</StateNumber>
     </table>
     <table id="30" parent="6" name="temporadas">
@@ -135,6 +136,7 @@
     </table>
     <table id="31" parent="6" name="usuarios">
       <ObjectId>49714</ObjectId>
+      <Outdated>1</Outdated>
       <StateNumber>13924</StateNumber>
     </table>
     <routine id="32" parent="6" name="akeys">
