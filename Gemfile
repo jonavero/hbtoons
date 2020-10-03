@@ -46,6 +46,8 @@ gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 gem 'scout_apm'
 
+gem 'newrelic_rpm'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
