@@ -63,39 +63,107 @@
         <div class="contenedor-episondios">
           <div class="">
             <h3 class="subtitulo-linea">Episodios</h3>
-            <% @temporadas.each do |temporada| %>
-              <h4 class="accordion estilo-temporada-activo estilo-temporada " data-temporada-id="<%= temporada[0] %>">
-                <span class="fa fa-chevron-right"></span> Temporada <%= temporada[0] %>
-              </h4>
-              <div class="episodio-panel">
-                <ul class="listas-de-episodion">
-                  <% temporada[1].each do |episodio| %>
-                    <li>
-                      <%
-                        active_class =  request.fullpath.split('/').last.to_i == episodio.id.to_i ? "active" : ""
-                      %>
-                      <%= link_to capitulo_path(episodio, t: "#{temporada[0]}"), class: "#{active_class}" do %>
-                        <span>Capitulo <%= episodio.Episodio %>-</span> <%= episodio.Titulo %>
-                      <% end %>
-                    </li>
+            <h4 class="estilo-temporada-activo estilo-temporada">
+              <span class="fa fa-play"></span>Temporada
+            </h4>
+            <% @Episodios.each do |e| %>
+              <ul class="listas-de-episodion">
+                <li >
+                  <%
+                    active_class =  request.fullpath.split('/').last.to_i == e.id.to_i ? "active" : ""
+                    on_page = !params[:page] ? 1 : params[:page]
+                  %>
+                  <%= link_to capitulo_path(e, page: "#{on_page}"), class: "#{active_class}" do %>
+                    <span>Capitulo <%= e.Episodio %>-</span> <%= e.Titulo %>
                   <% end %>
-                </ul>
-              </div>
+                </li>
+
+              </ul>
             <% end %>
             <div class="paginacion">
               <ul class=" pagination">
                 <li>
 
-                  <%#= will_paginate @Episodios, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+                  <%= will_paginate @Episodios, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
+      <!--  <div class="comentario-serie">
+          <div class="contenedor-formulario-comentario">
+            <h3 class="subtitulo-linea">Escribenos un comentario</h3>
+            <%#= form_for @Comentario, url: new_cometario_path(@Comentario) do |f| %>
+              <%# if @Comentario.errors.any? %>
+                <div id="errorExplanation">
+                  <ul>
+                    <%# @Comentario.errors.full_messages.each do |msg| %>
+                      <li class="alert alert-danger" role="alert"><%#= msg %></li>
+                    <%# end %>
+                  </ul>
+                </div>
+              <%# end %>
+              <div class="">
+                <div class="">
+                  <%#= f.text_field :Nombre, id: 'nombre', class: "form-control", placeholder: "Nombre" %>
+                  <span class="error"></span>
+                </div>
+                <div class="">
+                  <%#= f.text_field :Correo, id: 'correo', class: "form-control", placeholder: "Correo" %>
+                  <span class="error"></span>
+                </div>
+              </div>
+              <div class="">
+                <%#= f.text_area :Comentario, id: 'comentario', :rows => "8", :cols => "80", class: "form-control", placeholder: "Mensaje" %>
+                <span class="error"></span>
+              </div>
+              <%#= f.hidden_field :Capitulo_id, :value => @Capitulo.id, :readonly => "" %>
+              <div class="div-boton-publicar">
+                <input type="submit" id="publicar" class="btn btn-enviar" name="button" value="Publicar">
+              </div>
+            <%# end %>
+          </div>
+          <div class="contenedor-comentarios">
+            <div class="">
+              <p><span>(<%#= @Count %>)</span> Comentarios </p>
+            </div>
+
+            <div class="comentarios-escritos">
+              <%# @Comentarios.each do |c| %>
+                <div class="informacion-persona">
+                  <div class="comentario-por-persona">
+                    <div class="imagen-persona">
+                      <img src="img/persona.jpg" alt="">
+                      <p><%#= c.Nombre %><span class="fecha-publicacion"><%#= c.created_at.strftime("%d/%B/%Y") %></span>
+                      </p>
+                    </div>
+                    <div class="comentario-persona">
+                      <p><%#= c.Comentario %></p>
+                    </div>
+
+
+                  </div>
+                </div>
+              <%# end %>
+            </div>
+
+          </div>
+        </div>-->
       </div>
 
       <aside class="temporada-recomendaciones-series">
+<!--        ADS ZONE -->
+<!--        <script type="text/javascript">-->
+<!--            atOptions = {-->
+<!--                'key' : '6e1fbbbd45bc99f2043bac64d3c501b9',-->
+<!--                'format' : 'iframe',-->
+<!--                'height' : 50,-->
+<!--                'width' : 320,-->
+<!--                'params' : {}-->
+<!--            };-->
+<!--            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/6e1fbbbd45bc99f2043bac64d3c501b9/invoke.js"></scr' + 'ipt>');-->
+<!--        </script>-->
 
         <h3 class="subtitulo-linea">Series recomendadas</h3>
         <% @Recomendadas.each do |r| %>
@@ -159,31 +227,49 @@
         <% end %>
         <br>
         <!--ADS ZONE -->
+<!--        <script type="text/javascript">-->
+<!--            atOptions = {-->
+<!--                'key': '14604f0eb56d9a344b00a34ad1d2d871',-->
+<!--                'format': 'iframe',-->
+<!--                'height': 50,-->
+<!--                'width': 300,-->
+<!--                'params': {}-->
+<!--            };-->
+<!--            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/14604f0eb56d9a344b00a34ad1d2d871/invoke.js"></scr' + 'ipt>');-->
+<!--        </script>-->
+<!--        <br>-->
+
+
+<!--<p align="center">-->
+<!--        <script type="text/javascript"  >-->
+<!--            atOptions = {-->
+<!--                'key' : '147354888398c9bb5b869fc3f6785493',-->
+<!--                'format' : 'iframe',-->
+<!--                'height' : 600,-->
+<!--                'width' : 160,-->
+<!--                'params' : {}-->
+<!--            };-->
+<!--            document.write('<scr' + 'ipt type="text/javascript"  src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/147354888398c9bb5b869fc3f6785493/invoke.js"></scr' + 'ipt>');-->
+<!--        </script>-->
+<!--      </p>-->
+<!--<br>-->
+
+<!--        <p align="center">-->
+<!--          <script type="text/javascript">-->
+<!--              atOptions = {-->
+<!--                  'key' : '9749764c24779cce1661c0df51171131',-->
+<!--                  'format' : 'iframe',-->
+<!--                  'height' : 300,-->
+<!--                  'width' : 160,-->
+<!--                  'params' : {}-->
+<!--              };-->
+<!--              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/9749764c24779cce1661c0df51171131/invoke.js"></scr' + 'ipt>');-->
+<!--          </script>-->
+<!--        </p>-->
 
       </aside>
 
 
     </div>
   </div>
-  <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              let panel = this.nextElementSibling;
-              let chevron = this.querySelector('span');
-              if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                  chevron.classList.remove('fa-rotate-90')
-              } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                  chevron.classList.add('fa-rotate-90')
-              }
-          });
-      }
-
-  </script>
-
 </section>

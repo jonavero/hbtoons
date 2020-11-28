@@ -33,7 +33,13 @@ class SeriesController < ApplicationController
 
   def show
     @Serie= Serie.find(params[:id])
-    @Episodios=@Serie.capitulos.paginate(:page => params[:page], :per_page => 20).order(:Temporada, :Episodio)    #AQUUI
+
+    # @Episodios= @Serie.capitulos.paginate(:page => params[:page], :per_page => 20).order(:Temporada, :Episodio)    #AQUUI
+    @temporadas = @Serie.capitulos
+                      .where('"Serie_id" = ?',params[:id])
+                      .order(:temporada_id, :id)
+                      .group_by(&:temporada_id) # "1"
+
 
     @Recomendadas = Serie.all.shuffle[0..2]
 

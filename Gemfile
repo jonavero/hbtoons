@@ -48,6 +48,8 @@ gem 'scout_apm'
 
 gem 'newrelic_rpm'
 
+gem 'derailed', group: :development
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

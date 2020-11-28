@@ -864,18 +864,60 @@ section.contenedor-episodio-temporada .fa-play{
   margin-right: 5px;
 }
 
-ul.listas-de-episodion li a{
+.episodio-panel ul.listas-de-episodion li a {
   display: block;
   border-bottom: 3px solid #6D6868;
   padding: 10px 15px;
   transition: all 0.3s ease;
 }
-ul.listas-de-episodion li a:hover{
+.episodio-panel ul.listas-de-episodion li a:hover{
   box-shadow: 0 10px 5px rgba(0,0,0,0.3);
   border-bottom: 3px solid #6D6868;
   border-bottom-color: #C62828;
   color: #C62828;
 }
+
+.episodio-panel ul.listas-de-episodion li a.active{
+  box-shadow: 0 10px 5px rgba(0,0,0,0.3);
+  border-bottom: 3px solid #6D6868;
+  border-bottom-color: #C62828;
+  color: #C62828;
+}
+
+/* Accordion */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background: #8a1c1c;
+  color: #444;
+  cursor: pointer;
+  padding: 12px 15px;
+  margin-bottom: 5px;
+  width: 100%;
+  font-family: "OpenSans-Regular";
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion span {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion.active, .accordion:hover {
+  background-color: #6e1616;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.episodio-panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 
 .informcion-serie-recomendada{
   height: 200px;

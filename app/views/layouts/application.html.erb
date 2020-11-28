@@ -105,19 +105,28 @@
 
 
 </footer>
-<%#= javascript_include_tag 'jquery.js', 'data-turbolinks-track': 'reload' %>
-<%#= javascript_include_tag 'bootstrap.min.js', 'data-turbolinks-track': 'reload' %>
-<%= javascript_include_tag 'main.js', 'data-turbolinks-track': 'reload' %>
 <%= javascript_include_tag 'menu.js', 'data-turbolinks-track': 'reload' %>
-<!-- <script src="js/jquery.js"></script>
- <script src="js/bootstrap.min.js"></script>
- <script src="js/main.js"></script>
- <script src="js/menu.js"></script> -->
+<script type="text/javascript" charset="utf-8">
 
+    $('document').ready(function() {
+        const temporada = new URL(location.href).searchParams.get('t');
 
-<!--<script type='text/javascript' src='//pl15561240.passtechusa.com/5d/23/84/5d23845a305fdbee6e9a0ecc44bd768c.js'></script>-->
+        if(temporada) {
 
+            const accordion = document.querySelector(`h4[data-temporada-id="${temporada}"]`)
 
+            let panel = accordion.nextElementSibling;
+            let chevron = accordion.querySelector('span');
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                chevron.classList.remove('fa-rotate-90')
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                chevron.classList.add('fa-rotate-90')
+            }
+        }
+    });
+</script>
 
 </body>
 

@@ -8,11 +8,11 @@ class CapitulosController < ApplicationController
 
     @Recomendadas=Serie.all.shuffle[0..2]
 
-    @temporadas = Capitulo
+    @Episodios= Capitulo
                     .where('"Serie_id" = ?',@Capitulo.Serie_id)
-                    .order(:temporada_id, :id)
-                    .group_by(&:temporada_id) # "1"
-    # .paginate(:page => params[:page], :per_page => 20)
+                    .group_by(:Temporada)
+                    .paginate(:page => params[:page], :per_page => 20)
+                    .order(:Temporada, :Episodio)
 
    #
    #  @Comentario = Comentariocap.new

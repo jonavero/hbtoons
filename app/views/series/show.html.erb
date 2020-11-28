@@ -69,19 +69,26 @@
       <div class="contenedor-episondios">
         <div class="">
           <h3 class="subtitulo-linea">Episodios</h3>
-          <h4 class="estilo-temporada-activo estilo-temporada"><span class="fa fa-play"></span>Temporada</h4>
-          <% @Episodios.each do|e| %>
-          <ul class="listas-de-episodion">
-            <li><%= link_to capitulo_path(e) do %><span>Capitulo <%=e.Episodio %>-</span> <%= e.Titulo %><% end %></li>
+          <% @temporadas.each do |temporada| %>
 
-          </ul>
-        <% end %>
-          <div class="paginacion">
-            <ul class=" pagination">
-              <li>      <%= will_paginate @Episodios, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></li>
-
-            </ul>
-          </div>
+            <h4 class="accordion estilo-temporada-activo estilo-temporada">
+              <span class="fa fa-chevron-right"></span> Temporada <%= temporada[0] %>
+            </h4>
+            <div class="episodio-panel">
+              <ul class="listas-de-episodion">
+                <% temporada[1].each do |episodio| %>
+                  <li>
+                    <%
+                      active_class =  request.fullpath.split('/').last.to_i == episodio.id.to_i ? "active" : ""
+                    %>
+                    <%= link_to capitulo_path(episodio, t: "#{episodio.temporada_id}"), class: "#{active_class}" do %>
+                      <span>Capitulo <%= episodio.Episodio %>-</span> <%= episodio.Titulo %>
+                    <% end %>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
 
         </div>
       </div>
@@ -169,54 +176,27 @@
         <% end %>
         <br>
 
-<!--        ADS ZONE-->
-<!--        <script type="text/javascript">-->
-<!--            atOptions = {-->
-<!--                'key': '14604f0eb56d9a344b00a34ad1d2d871',-->
-<!--                'format': 'iframe',-->
-<!--                'height': 50,-->
-<!--                'width': 300,-->
-<!--                'params': {}-->
-<!--            };-->
-<!--            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/14604f0eb56d9a344b00a34ad1d2d871/invoke.js"></scr' + 'ipt>');-->
-<!--        </script>-->
-
-<!--        <br>-->
-
-
-        <!--ADS ZONE -->
-
-
-<!--        <p align="center">-->
-<!--          <script type="text/javascript"  >-->
-<!--              atOptions = {-->
-<!--                  'key' : '147354888398c9bb5b869fc3f6785493',-->
-<!--                  'format' : 'iframe',-->
-<!--                  'height' : 600,-->
-<!--                  'width' : 160,-->
-<!--                  'params' : {}-->
-<!--              };-->
-<!--              document.write('<scr' + 'ipt type="text/javascript"  src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/147354888398c9bb5b869fc3f6785493/invoke.js"></scr' + 'ipt>');-->
-<!--          </script>-->
-<!--        </p> <br>-->
-
-
-<!--<p align="center">-->
-<!--        <script type="text/javascript">-->
-<!--            atOptions = {-->
-<!--                'key' : '9749764c24779cce1661c0df51171131',-->
-<!--                'format' : 'iframe',-->
-<!--                'height' : 300,-->
-<!--                'width' : 160,-->
-<!--                'params' : {}-->
-<!--            };-->
-<!--            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/9749764c24779cce1661c0df51171131/invoke.js"></scr' + 'ipt>');-->
-<!--        </script>-->
-<!--</p>-->
-
-
       </aside>
 
     </div>
   </div>
+  <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              let panel = this.nextElementSibling;
+              let chevron = this.querySelector('span');
+              if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                  chevron.classList.remove('fa-rotate-90')
+              } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                  chevron.classList.add('fa-rotate-90')
+              }
+          });
+      }
+  </script>
 </section>
