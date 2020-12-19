@@ -166,23 +166,27 @@
     </div>
   </div>
   <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
 
-      for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              let panel = this.nextElementSibling;
-              let chevron = this.querySelector('span');
-              if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                  chevron.classList.remove('fa-rotate-90')
-              } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                  chevron.classList.add('fa-rotate-90')
-              }
-          });
-      }
+      $('document').ready(function() {
+          let acc = document.getElementsByClassName("accordion");
+          let i;
+
+          for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  let panel = this.nextElementSibling;
+                  let chevron = this.querySelector('span');
+                  if (panel.style.maxHeight) {
+                      panel.style.maxHeight = null;
+                      chevron.classList.remove('fa-rotate-90')
+                  } else {
+                      panel.style.maxHeight = panel.scrollHeight + "px";
+                      chevron.classList.add('fa-rotate-90')
+                  }
+              });
+          }
+      });
+
 
   </script>
 

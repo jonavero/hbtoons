@@ -106,14 +106,7 @@
 <!--            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topdisplaynetwork.com/6e1fbbbd45bc99f2043bac64d3c501b9/invoke.js"></scr' + 'ipt>');-->
 <!--        </script>-->
 
-     <!--   <div class="tempora">
-          <h3 class="subtitulo-linea"></span>Temporadas</h3>
-          <%@Temporada.each do |t| %>
-          <ul>
-            <li class="estilo-temporada"><a href="#"><span class="fa fa-play"></span><%=t %></a></li>
-          </ul>
-            <% end %>
-        </div> -->
+
         <h3 class="subtitulo-linea">Series recomendadas</h3>
 
         <% @Recomendadas.each do |r| %>
@@ -181,22 +174,26 @@
     </div>
   </div>
   <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
 
-      for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              let panel = this.nextElementSibling;
-              let chevron = this.querySelector('span');
-              if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                  chevron.classList.remove('fa-rotate-90')
-              } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                  chevron.classList.add('fa-rotate-90')
-              }
-          });
-      }
+      $('document').ready(function() {
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  let panel = this.nextElementSibling;
+                  let chevron = this.querySelector('span');
+                  if (panel.style.maxHeight) {
+                      panel.style.maxHeight = null;
+                      chevron.classList.remove('fa-rotate-90')
+                  } else {
+                      panel.style.maxHeight = panel.scrollHeight + "px";
+                      chevron.classList.add('fa-rotate-90')
+                  }
+              });
+          }
+      });
+
   </script>
 </section>
